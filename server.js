@@ -7,12 +7,12 @@ var logger = require('morgan')
 var pug = require('pug')
 var fs = require('fs')
 
-var templateDirectory = path.join(__dirname, '/source/templates/')
+var templateDirectory = path.join(__dirname, '/src/templates/')
 var homepage = pug.compileFile(path.join(templateDirectory, 'homepage.pug'))
 var projectPage = pug.compileFile(path.join(templateDirectory + 'project.pug'))
 var projectsPage = pug.compileFile(path.join(templateDirectory + 'projects.pug'))
 
-var projects = JSON.parse(fs.readFileSync(path.join(__dirname, '/source/json/projects.json')))
+var projects = JSON.parse(fs.readFileSync(path.join(__dirname, '/src/json/projects.json')))
 
 var app = express()
 

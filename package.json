@@ -20,8 +20,8 @@
     "stylus": "^0.54.5"
   },
   "scripts": {
-    "build-css": "stylus source/stylesheets/index.styl -o static/css",
-    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "build-css": "stylus src/stylesheets/index.styl -o static/css",
+    "watch-css": "stylus src/stylesheets/index.styl -o static/css -w",
     "clean": "rm -rf static/css && mkdir -p static/css",
     "build": "npm run clean && npm run build-css",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
