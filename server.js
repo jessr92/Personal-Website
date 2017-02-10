@@ -45,7 +45,7 @@ app.get('/projects/:project', function (req, res, next) {
     }
 })
 
-var port = process.env.port || 1337;
+var port = process.env.PORT || 1337;
 
 app.listen(port, function () {
     console.log('Listening on http://localhost:' + port)
