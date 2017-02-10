@@ -1,0 +1,31 @@
+{
+  "name": "gordon-reid-personal-website",
+  "version": "0.0.0",
+  "description": "My Personal Website",
+  "homepage": "gordon-reid.com",
+  "bugs": {
+    "url": "https://github.com/gordon1992/NodeJsAzureWebsite/issues",
+    "email": "gordon.reid1992@hotmail.co.uk"
+  },
+  "private": true,
+  "main": "server.js",
+  "author": {
+    "name": "Gordon Reid"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0",
+    "pug": "^2.0.0-beta6",
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+    "build-css": "stylus source/stylesheets/index.styl -o static/css",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
+    "start-windows": "node server",
+    "start-debian": "nodejs server"
+  }
+}

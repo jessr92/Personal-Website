@@ -1,0 +1,6 @@
+extend default
+
+block content
+  ul
+    each id in projects.ids
+      li: a(href='/projects/' + id) #{projects.projects[id].title} in #{projects.projects[id].language}
