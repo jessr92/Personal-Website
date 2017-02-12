@@ -3,7 +3,7 @@
 var assert = require('assert')
 var path = require('path')
 var fs = require('fs')
-var htmlStore = require('../src/js/pug.js')
+var htmlStore = require('../src/js/htmlStore.js')
 
 describe('HTML Store', function () {
   describe('getPage()', function () {
