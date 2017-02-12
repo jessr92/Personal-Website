@@ -4,7 +4,7 @@ var path = require('path')
 var express = require('express')
 var logger = require('morgan')
 
-var htmlStore = require('./src/js/pug.js')
+var htmlStore = require('./src/js/htmlStore.js')
 
 var app = express()
 
