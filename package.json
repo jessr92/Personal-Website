@@ -17,7 +17,8 @@
     "morgan": "^1.7.0",
     "nodemon": "^1.11.0",
     "pug": "^2.0.0-beta6",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "mocha": "^3.2.0"
   },
   "scripts": {
     "build-css": "stylus src/stylesheets/index.styl -o static/css",
@@ -26,6 +27,7 @@
     "build": "npm run clean && npm run build-css",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
     "start-windows": "node server",
-    "start-debian": "nodejs server"
+    "start-debian": "nodejs server",
+    "test": "mocha"
   }
 }
