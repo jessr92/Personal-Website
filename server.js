@@ -13,9 +13,7 @@ app.use(express.static(path.join(__dirname, '/static')))
 
 app.get('/', function (req, res, next) {
   try {
-    var homepageHTML = htmlStore.getPage('/')
-    console.log('html: ' + homepageHTML)
-    res.send(homepageHTML)
+    res.send(htmlStore.getPage('/'))
   } catch (e) {
     next(e)
   }
