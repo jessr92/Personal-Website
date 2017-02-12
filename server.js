@@ -1,18 +1,10 @@
 'use strict'
 
-const path = require('path')
-
+var path = require('path')
 var express = require('express')
 var logger = require('morgan')
-var pug = require('pug')
-var fs = require('fs')
 
-var templateDirectory = path.join(__dirname, '/src/templates/')
-var homepage = pug.compileFile(path.join(templateDirectory, 'homepage.pug'))
-var projectPage = pug.compileFile(path.join(templateDirectory + 'project.pug'))
-var projectsPage = pug.compileFile(path.join(templateDirectory + 'projects.pug'))
-
-var projects = JSON.parse(fs.readFileSync(path.join(__dirname, '/src/json/projects.json')))
+var htmlStore = require('./src/js/pug.js')
 
 var app = express()
 
@@ -21,7 +13,9 @@ app.use(express.static(path.join(__dirname, '/static')))
 
 app.get('/', function (req, res, next) {
   try {
-    res.send(homepage())
+    var homepageHTML = htmlStore.getPage('/')
+    console.log('html: ' + homepageHTML)
+    res.send(homepageHTML)
   } catch (e) {
     next(e)
   }
@@ -29,10 +23,7 @@ app.get('/', function (req, res, next) {
 
 app.get('/projects', function (req, res, next) {
   try {
-    var html = projectsPage({
-      'projects': projects
-    })
-    res.send(html)
+    res.send(htmlStore.getPage('/projects'))
   } catch (e) {
     next(e)
   }
@@ -41,10 +32,7 @@ app.get('/projects', function (req, res, next) {
 app.get('/projects/:project', function (req, res, next) {
   try {
     var project = req.params.project
-    var html = projectPage({
-      'project': projects.projects[project]
-    })
-    res.send(html)
+    res.send(htmlStore.getPage('/projects/' + project))
   } catch (e) {
     next(e)
   }
