@@ -1,6 +1,7 @@
 extend default
 
 block content
+  h3 Projects
   ul
     each id in projects.ids
       li: a(href='/projects/' + id) #{projects.projects[id].title} in #{projects.projects[id].language}
