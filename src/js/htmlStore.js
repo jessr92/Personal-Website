@@ -27,7 +27,7 @@ module.exports = (function () {
   }
 
   var storeAccessor = function () {}
-  storeAccessor.getPage = function (pageId) {
+  storeAccessor.get = function (pageId) {
     if (pageId in htmlStore) {
       return htmlStore[pageId]
     }
