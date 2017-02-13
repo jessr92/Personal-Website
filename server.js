@@ -3,11 +3,13 @@
 var path = require('path')
 var express = require('express')
 var logger = require('morgan')
+var helmet = require('helmet')
 
 var htmlStore = require('./src/js/htmlStore.js')
 
 var app = express()
 
+app.use(helmet())
 app.use(logger('dev'))
 app.use(express.static(path.join(__dirname, '/static')))
 
