@@ -6,7 +6,7 @@ var fs = require('fs')
 var htmlStore = require('../src/js/htmlStore.js')
 
 describe('HTML Store', function () {
-  describe('getPage()', function () {
+  describe('get', function () {
     it('should return HTML for homepage', function () {
       var html = htmlStore.get('/')
       assert(html.length > 0)
