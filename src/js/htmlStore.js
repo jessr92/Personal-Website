@@ -15,8 +15,8 @@ var addErrorPages = function () {
 }
 
 var addProjectPages = function () {
-  var projectPage = pug.compileFile(path.join(templateDirectory + 'project.pug'))
-  var projectsPage = pug.compileFile(path.join(templateDirectory + 'projects.pug'))
+  var projectPage = pug.compileFile(path.join(templateDirectory, 'project.pug'))
+  var projectsPage = pug.compileFile(path.join(templateDirectory, 'projects.pug'))
   var projects = JSON.parse(fs.readFileSync(path.join(__dirname, '../json/projects.json')))
 
   htmlStore['/projects'] = projectsPage({
