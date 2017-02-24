@@ -3,9 +3,9 @@
 'use strict'
 
 var request = require('supertest')
-var app = require('./../src/js/express')
+var app = require('../src/js/express')
 
-describe('GET / request', function () {
+describe('GET request for /', function () {
   it('respond with HTML when the request ends in /', function (done) {
     request(app)
       .get('/')
@@ -15,6 +15,20 @@ describe('GET / request', function () {
   it('respond with HTML when the request does not end in /', function (done) {
     request(app)
       .get('')
+      .expect('Content-Type', 'text/html; charset=utf-8')
+      .expect(200, done)
+  })
+})
+describe('GET request for projects', function () {
+  it('respond with HTML when the request ends in /', function (done) {
+    request(app)
+      .get('/projects/')
+      .expect('Content-Type', 'text/html; charset=utf-8')
+      .expect(200, done)
+  })
+  it('respond with HTML when the request does not end in /', function (done) {
+    request(app)
+      .get('/projects')
       .expect('Content-Type', 'text/html; charset=utf-8')
       .expect(200, done)
   })
