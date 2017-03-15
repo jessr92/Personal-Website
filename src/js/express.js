@@ -1,14 +1,17 @@
-var path = require('path')
-var express = require('express')
-var logger = require('morgan')
-var helmet = require('helmet')
+/*jshint node: true*/
+"use strict";
 
-var router = require('./routing')
+var path = require("path");
+var express = require("express");
+var logger = require("morgan");
+var helmet = require("helmet");
 
-var app = express()
-app.use(helmet())
-app.use(logger('dev'))
-app.use(express.static(path.join(__dirname, '../../static')))
-app.use(router)
+var router = require("./routing");
 
-module.exports = app
+var app = express();
+app.use(helmet());
+app.use(logger("dev"));
+app.use(express.static(path.join(__dirname, "../../static")));
+app.use(router);
+
+module.exports = app;
