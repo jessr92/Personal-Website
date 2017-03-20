@@ -60,8 +60,7 @@ var getHtmlStore = function () {
 };
 
 /**
- * Module storing Pug-generated HTML
- * @module htmlStore
+ *
  * @type {{get, has}}
  */
 module.exports = getHtmlStore();

@@ -1,6 +1,12 @@
 {
-  "languages": [ "Fortran", "OpenCL" ],
-  "ids": [ "DocumentFiltering", "LES" ],
+  "languages": [
+    "Fortran",
+    "OpenCL"
+  ],
+  "ids": [
+    "DocumentFiltering",
+    "LES"
+  ],
   "projects": {
     "LES": {
       "title": "Exploring the parallelisation of the Large Eddy Simulation using MPI and the Glasgow Model Coupling Framework",
