@@ -2,10 +2,6 @@
 /*jshint node: true, mocha: true */
 "use strict";
 
-/**
- *
- * @type {get}
- */
 var request = require("supertest");
 var app = require("../src/js/express");
 
