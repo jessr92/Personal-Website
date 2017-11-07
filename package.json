@@ -19,7 +19,7 @@
     "pug": "^2.0.0-beta9"
   },
   "devDependencies": {
-    "mocha": "^3.2.0",
+    "mocha": "^4.0.1",
     "nodemon": "^1.11.0",
     "stylus": "^0.54.5",
     "supertest": "^3.0.0"
@@ -29,9 +29,6 @@
     "watch-css": "stylus src/stylesheets/index.styl -o static/css -w",
     "clean": "rm -rf static/css && mkdir -p static/css",
     "build": "npm run clean && npm run build-css",
-    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
-    "start-windows": "node server",
-    "start-debian": "nodejs server",
-    "test": "mocha"
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug"
   }
 }
