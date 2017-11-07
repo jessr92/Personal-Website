@@ -29,6 +29,7 @@
     "watch-css": "stylus src/stylesheets/index.styl -o static/css -w",
     "clean": "rm -rf static/css && mkdir -p static/css",
     "build": "npm run clean && npm run build-css",
-    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug"
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
+    "test": "mocha"
   }
 }
