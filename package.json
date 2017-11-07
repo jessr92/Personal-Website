@@ -13,14 +13,14 @@
     "name": "Gordon Reid"
   },
   "dependencies": {
-    "express": "^4.14.1",
-    "helmet": "^3.4.0",
-    "morgan": "^1.8.1",
-    "pug": "^2.0.0-beta9"
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {
     "mocha": "^4.0.1",
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.12.1",
     "stylus": "^0.54.5",
     "supertest": "^3.0.0"
   },
