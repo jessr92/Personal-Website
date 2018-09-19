@@ -1,17 +1,17 @@
-/*jshint node: true*/
+/*jshint node: true, esversion: 6 */
 "use strict";
 
-var path = require("path");
-var pug = require("pug");
-var fs = require("fs");
+const path = require("path");
+const pug = require("pug");
+const fs = require("fs");
 
-var templateDirectory = path.join(__dirname, "../templates/");
-var htmlStore = {};
-var defaultPugOptions = null;
+const templateDirectory = path.join(__dirname, "../templates/");
+const htmlStore = {};
+const defaultPugOptions = null;
 
-var addErrorPages = function () {
-    var errorNotFoundPage = pug.compileFile(path.join(templateDirectory, "404.pug"), defaultPugOptions);
-    var internalServerErrorPage = pug.compileFile(path.join(templateDirectory, "500.pug"), defaultPugOptions);
+const addErrorPages = function () {
+    const errorNotFoundPage = pug.compileFile(path.join(templateDirectory, "404.pug"), defaultPugOptions);
+    const internalServerErrorPage = pug.compileFile(path.join(templateDirectory, "500.pug"), defaultPugOptions);
     htmlStore["404_ERROR_PAGE"] = errorNotFoundPage();
     htmlStore["500_ERROR_PAGE"] = internalServerErrorPage();
 };
@@ -19,11 +19,11 @@ var addErrorPages = function () {
 /**
  * @property {array} projects.ids   Array of unique IDs that represent each coding project.
  */
-var addProjectPages = function () {
-    var projectPage = pug.compileFile(path.join(templateDirectory, "project.pug"), defaultPugOptions);
-    var projectsPage = pug.compileFile(path.join(templateDirectory, "projects.pug"), defaultPugOptions);
-    var projectsJSON = fs.readFileSync(path.join(__dirname, "../json/projects.json"));
-    var projects = JSON.parse(projectsJSON);
+const addProjectPages = function () {
+    const projectPage = pug.compileFile(path.join(templateDirectory, "project.pug"), defaultPugOptions);
+    const projectsPage = pug.compileFile(path.join(templateDirectory, "projects.pug"), defaultPugOptions);
+    const projectsJSON = fs.readFileSync(path.join(__dirname, "../json/projects.json"));
+    const projects = JSON.parse(projectsJSON);
 
     htmlStore["/projects"] = projectsPage({
         "projects": projects
@@ -35,18 +35,18 @@ var addProjectPages = function () {
     });
 };
 
-var addStaticPages = function () {
-    var homepage = pug.compileFile(path.join(templateDirectory, "homepage.pug"), defaultPugOptions);
+const addStaticPages = function () {
+    const homepage = pug.compileFile(path.join(templateDirectory, "homepage.pug"), defaultPugOptions);
     htmlStore[""] = homepage();
 };
 
-var init = function () {
+const init = function () {
     addErrorPages();
     addProjectPages();
     addStaticPages();
 };
 
-var getHtmlStore = function () {
+const getHtmlStore = function () {
     init();
 
     return {

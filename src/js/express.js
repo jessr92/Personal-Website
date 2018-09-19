@@ -1,14 +1,14 @@
-/*jshint node: true*/
+/*jshint node: true, esversion: 6 */
 "use strict";
 
-var path = require("path");
-var express = require("express");
-var logger = require("morgan");
-var helmet = require("helmet");
+const path = require("path");
+const express = require("express");
+const logger = require("morgan");
+const helmet = require("helmet");
 
-var router = require("./routing");
+const router = require("./routing");
 
-var app = express();
+const app = express();
 app.use(helmet());
 app.use(logger("dev"));
 app.use(express.static(path.join(__dirname, "../../static")));

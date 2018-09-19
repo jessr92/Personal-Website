@@ -1,8 +1,8 @@
-/*jshint node: true*/
+/*jshint node: true, esversion: 6 */
 "use strict";
 
-var app = require('./src/js/express');
-var port = process.env.PORT || 1337;
+const app = require('./src/js/express');
+const port = process.env.PORT || 1337;
 
 app.listen(port, function () {
     console.log('Listening on http://localhost:' + port);

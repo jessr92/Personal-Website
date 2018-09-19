@@ -1,12 +1,12 @@
-/*jshint node: true*/
+/*jshint node: true, esversion: 6 */
 "use strict";
 
-var express = require("express");
-var router = new express.Router();
+const express = require("express");
+const router = new express.Router({});
 
-var htmlStore = require("./htmlStore");
+const htmlStore = require("./htmlStore");
 
-var handleRequest = function (url, res, next) {
+const handleRequest = function (url, res, next) {
     try {
         if (htmlStore.has(url)) {
             res.send(htmlStore.get(url));
