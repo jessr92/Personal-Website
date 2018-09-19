@@ -1,9 +1,9 @@
 /* eslint-env mocha */
-/*jshint node: true, mocha: true */
+/*jshint node: true, mocha: true, esversion: 6 */
 "use strict";
 
-var request = require("supertest");
-var app = require("../src/js/express");
+const request = require("supertest");
+const app = require("../src/js/express");
 
 describe("GET request for /", function () {
     it("respond with HTML when the request ends in /", function (done) {
