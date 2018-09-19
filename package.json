@@ -13,16 +13,16 @@
     "name": "Gordon Reid"
   },
   "dependencies": {
-    "express": "^4.16.2",
-    "helmet": "^3.9.0",
-    "morgan": "^1.9.0",
-    "pug": "^2.0.0-rc.4"
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
-    "mocha": "^4.0.1",
-    "nodemon": "^1.12.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
     "stylus": "^0.54.5",
-    "supertest": "^3.0.0"
+    "supertest": "^3.3.0"
   },
   "scripts": {
     "build-css": "stylus src/stylesheets/index.styl -o static/css",
