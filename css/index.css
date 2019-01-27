@@ -58,8 +58,7 @@ body {
 .footer {
     margin: 50px auto;
     max-width: 800px;
-    border-top: 1px solid #444;
-    padding: 20px 0;
+    padding: 5px;
 }
 
 .footer p {
