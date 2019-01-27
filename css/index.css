@@ -52,14 +52,3 @@ body {
     line-height: 1.6;
     margin-bottom: 1.7em;
 }
-
-.footer {
-    margin: 50px auto;
-    max-width: 800px;
-    padding: 0 25px 0 25px;
-}
-
-.footer p {
-    color: #444;
-    font-size: 12px;
-}
