@@ -1,0 +1,30 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly app.ts",
+    "prod": "tsc && NODE_ENV=production node ./build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordon1992/Personal-Website.git"
+  },
+  "author": "Gordon Reid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gordon1992/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/gordon1992/Personal-Website#readme",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/serve-favicon": "^2.5.0",
+    "express": "^4.17.1",
+    "pug": "^3.0.0",
+    "serve-favicon": "^2.5.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.3"
+  }
+}
