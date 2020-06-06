@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "dev": "ts-node-dev --poll --transpileOnly app.ts",
-    "prod": "tsc && NODE_ENV=production node ./build/app.js"
+    "prod": "tsc && NODE_ENV=production node ./app.js"
   },
   "repository": {
     "type": "git",

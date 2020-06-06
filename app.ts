@@ -2,7 +2,7 @@ import express = require('express');
 import favicon = require('serve-favicon');
 import path = require('path');
 
-const projects: { [key:string]: any} = require('./app/projects.json');
+const projects: { [key:string]: any} = require(path.join(__dirname, 'app', 'projects.json'));
 
 const app: express.Application = express();
 
