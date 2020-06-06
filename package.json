@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "test": "mocha -r ts-node/register test/*.ts",
+    "test": "mocha --exit -r ts-node/register test/*.ts",
     "dev": "ts-node-dev --poll --transpileOnly app.ts",
     "prod": "tsc && NODE_ENV=production node ./app.js"
   },
