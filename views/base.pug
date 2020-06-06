@@ -1,0 +1,19 @@
+doctype html
+html(lang="en-gb")
+    head
+        meta(http-equiv="Content-Type", content="text/html", charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="description", content=description)
+        link(rel='shortcut icon', type="image/x-icon", sizes='16x16', href='/favicon.ico')
+        link(rel='stylesheet', href='/css/index.css')
+        title Gordon Reid
+    body
+        div.header
+            h1.page-title Gordon Reid
+        ul.nav
+            li
+                a(href="/") Home
+            li
+                a(href="/projects") Projects
+        div.main-content
+            block content
