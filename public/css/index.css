@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    background-color: #555555;
+    background-color: #6495ed;
 }
 
 .header .page-title {
@@ -17,11 +17,11 @@ body {
     font-size: 60px;
     text-align: center;
     padding: 10px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .nav {
-    background: #000;
+    background: #00008b;
     text-align: center;
 }
 
@@ -32,13 +32,13 @@ body {
 .nav a {
     display: inline-block;
     padding: 20px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
 }
 
 .nav a:hover {
-    background-color: #3ab795;
+    background-color: #3a76b7;
     text-decoration: underline;
 }
 
