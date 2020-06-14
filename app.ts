@@ -1,13 +1,12 @@
 import express = require("express");
 import favicon = require("serve-favicon");
 import path = require("path");
-import helmet = require("helmet")
 
 const projects: { [key: string]: any } = require(path.join(__dirname, "app", "projects.json"));
 
 const app: express.Application = express();
 
-app.use(helmet());
+app.disable('x-powered-by')
 
 app.set("view engine", "pug");
 
