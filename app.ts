@@ -1,12 +1,15 @@
 import express = require("express");
 import favicon = require("serve-favicon");
 import path = require("path");
+import helmet = require("helmet")
 
 const projects: { [key: string]: any } = require(path.join(__dirname, "app", "projects.json"));
 
 const app: express.Application = express();
 
-app.set("view engine", "pug")
+app.use(helmet());
+
+app.set("view engine", "pug");
 
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 
