@@ -23,9 +23,9 @@ app.get("/projects", function (req, res) {
 });
 
 app.get("/projects/:project_id", function (req, res, next) {
-    const project_id: string = req.params["project_id"];
-    if (project_id in projects) {
-        res.render("project", projects[project_id]);
+    const projectId: string = req.params["project_id"];
+    if (projectId in projects) {
+        res.render("project", projects[projectId]);
     } else {
         next();
     }
