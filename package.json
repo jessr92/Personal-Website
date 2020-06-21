@@ -25,7 +25,7 @@
     "express": "^4.17.1",
     "pug": "^3.0.0",
     "serve-favicon": "^2.5.0",
-    "ts-node-dev": "^1.0.0-pre.47",
+    "ts-node-dev": "^1.0.0-pre.49",
     "typescript": "^3.9.5"
   },
   "devDependencies": {
