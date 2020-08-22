@@ -7,7 +7,8 @@
     "tsc": "tsc",
     "test": "tsc && mocha --exit -r ts-node/register test/*.ts",
     "dev": "ts-node-dev --poll --transpileOnly app.ts",
-    "prod": "tsc && NODE_ENV=production node ./app.js"
+    "prod": "tsc && NODE_ENV=production node ./app.js",
+    "start": "npm run prod"
   },
   "repository": {
     "type": "git",
