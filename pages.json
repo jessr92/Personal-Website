@@ -1,0 +1,17 @@
+{
+  "index.html": {
+    "template": "index.pug"
+  },
+  "projects/index.html": {
+    "template": "projects.pug",
+    "projects": "$PROJECTS"
+  },
+  "projects/DocumentFiltering/index.html": {
+    "template": "project.pug",
+    "projectName": "DocumentFiltering"
+  },
+  "projects/LES/index.html": {
+    "template": "project.pug",
+    "projectName": "LES"
+  }
+}
