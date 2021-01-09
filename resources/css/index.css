@@ -8,11 +8,8 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-.header {
+header {
     background-color: #6495ed;
-}
-
-.header .page-title {
     font-weight: 500;
     font-size: 60px;
     text-align: center;
