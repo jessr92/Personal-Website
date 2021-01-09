@@ -20,16 +20,16 @@ body {
     color: #ffffff;
 }
 
-.nav {
+nav {
     background: #00008b;
     text-align: center;
 }
 
-.nav li {
+nav li {
     display: inline-block;
 }
 
-.nav a {
+nav a {
     display: inline-block;
     padding: 20px;
     color: #ffffff;
@@ -37,7 +37,7 @@ body {
     font-size: 20px;
 }
 
-.nav a:hover {
+nav a:hover {
     background-color: #3a76b7;
     text-decoration: underline;
 }
