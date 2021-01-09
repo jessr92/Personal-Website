@@ -48,7 +48,7 @@ Object.entries(pages).forEach(([filename, metadata]) => {
 });
 
 console.log("Clearing out " + outputFolder + " in preparation for website generation");
-fse.emptyDirSync(outputFolder);
+//fse.emptyDirSync(outputFolder);
 console.log(outputFolder + " cleared out.");
 
 Object.entries(compiledViews).forEach(([filename, functionAndMetadata]) => {
