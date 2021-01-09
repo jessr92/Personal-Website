@@ -12,6 +12,10 @@
       {
         "key": "LES",
         "title": "Exploring the parallelisation of the Large Eddy Simulation using MPI and the Glasgow Model Coupling Framework in Fortran"
+      },
+      {
+        "key": "PersonalWebsite",
+        "title": "This website"
       }
     ]
   },
@@ -29,6 +33,14 @@
       "project_title": "Exploring the parallelisation of the Large Eddy Simulation using MPI and the Glasgow Model Coupling Framework in Fortran",
       "project_description": "Climate scientists write a number of applications to simulate aspects of our planet's ecosystem. These are sometimes coupled with other simulations using model coupling frameworks. This improves the accuracy of results and allows climate scientists to model more complicated scenarios. The Glasgow Model Coupling Framework (GMCF) is a new kind of model coupling framework that can also be used to parallelise individual models. By comparing LES performance when parallelised by MPI and GMCF, it is shown that GMCF offers competitive performance with MPI while also providing model coupling functionality.",
       "github_url": "https://github.com/gordon1992/LES-WRF-MPI"
+    }
+  },
+  "projects/PersonalWebsite/index.html": {
+    "template": "project.pug",
+    "project": {
+      "project_title": "This website",
+      "project_description": "This website is hosted on github.io and I have written a very basic TypeScript wrapper around pug which reads in a JSON file called pages.json and generates the required HTML pages. It's a \"static website generator\" of sorts but one that only contains sufficient functionality for my use cases and nothing else.",
+      "github_url": "https://github.com/gordon1992/Personal-Website"
     }
   }
 }
