@@ -10,7 +10,7 @@ type FunctionToMetadata = [Function, Metadata];
 type HtmlToTemplate = Record<string, Metadata>;
 type HtmlToCompiledTemplate = Record<string, FunctionToMetadata>;
 
-const outputFolder = './gordon1992.github.io/';
+const outputFolder = '../gordon1992.github.io/';
 const resourcesFolder = './resources/';
 const viewsFolder = './views/';
 const options = {
