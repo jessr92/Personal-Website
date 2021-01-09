@@ -2,6 +2,6 @@ extends base.pug
 
 block content
     ul
-        each project, project_key in projects
+        each project in projects
             li
-                a(href="/projects/" + project_key) #{project.project_title}
+                a(href="/projects/" + project.key) #{project.title}
