@@ -2,31 +2,17 @@ import fs = require('fs');
 import fse = require('fs-extra');
 import pug = require('pug');
 import path = require('path');
-import {HtmlToCompiledTemplate} from "./custom_types";
+import {HtmlOutputPathToCompiledTemplateWithMetadata} from "./custom_types";
 import {
-    KNOWN_SUBSTITUTE_VARIABLES,
     OUTPUT_FOLDER,
     PAGE_DESCRIPTIONS,
-    PROJECTS_DESCRIPTIONS,
     PUG_OPTIONS,
     RESOURCES_FOLDER,
     VIEWS_FOLDER
 } from "./constants";
 
-function readInPageDescriptions(): void {
-    Object.entries(PAGE_DESCRIPTIONS).forEach(([_filename, metadata]) => {
-        Object.entries(metadata).forEach(([variable, potentialSubstitution]) => {
-            if (potentialSubstitution.startsWith("$")) {
-                metadata[variable] = KNOWN_SUBSTITUTE_VARIABLES[potentialSubstitution];
-            } else if (variable == 'projectName') {
-                metadata['project'] = PROJECTS_DESCRIPTIONS[potentialSubstitution]
-            }
-        });
-    });
-}
-
-function compileTemplates(): HtmlToCompiledTemplate {
-    let compiledViews: HtmlToCompiledTemplate = {};
+function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
+    let compiledViews: HtmlOutputPathToCompiledTemplateWithMetadata = {};
     Object.entries(PAGE_DESCRIPTIONS).forEach(([filename, metadata]) => {
         compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
     });
@@ -40,6 +26,7 @@ function generateHtmlPages(): void {
         console.log("Going to generate " + outputFile);
         let compiledFunction = functionAndMetadata[0];
         let metadata = functionAndMetadata[1];
+        console.log(metadata);
         let generatedHtml = compiledFunction(metadata);
         ensureDirectoryExistence(outputFile);
         fs.writeFileSync(outputFile, generatedHtml);
@@ -60,7 +47,6 @@ function ensureDirectoryExistence(filePath: string): void {
 }
 
 function main(): void {
-    readInPageDescriptions();
     generateHtmlPages();
     copyStaticResources();
 }
