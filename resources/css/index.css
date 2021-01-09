@@ -39,17 +39,17 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.main-content {
+main {
     margin: 25px auto;
     padding: 0 25px 0 25px;
     max-width: 800px;
 }
 
-.main-content p {
+main p {
     line-height: 1.6;
     margin-bottom: 1.7em;
 }
 
-.main-content li {
+main li {
     margin-bottom: 0.5em;
 }
