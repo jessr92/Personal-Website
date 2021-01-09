@@ -33,6 +33,14 @@ function generateHtmlPages(): void {
     });
 }
 
+function generateErrorPages(): void {
+    let fileFor404Page = OUTPUT_FOLDER + '404.html';
+    let compiled404Function = pug.compileFile(VIEWS_FOLDER + '404.pug', PUG_OPTIONS);
+    let generated404Html = compiled404Function();
+    ensureDirectoryExistence(fileFor404Page);
+    fs.writeFileSync(fileFor404Page, generated404Html);
+}
+
 function copyStaticResources(): void {
     console.log("Going to copy resources from " + RESOURCES_FOLDER + " to " + OUTPUT_FOLDER);
     fse.copySync(RESOURCES_FOLDER, OUTPUT_FOLDER);
@@ -48,6 +56,7 @@ function ensureDirectoryExistence(filePath: string): void {
 
 function main(): void {
     generateHtmlPages();
+    generateErrorPages();
     copyStaticResources();
 }
 
