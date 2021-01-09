@@ -1,29 +1,57 @@
 import fs = require('fs');
 import fse = require('fs-extra');
 import pug = require('pug');
-import path from "path";
+import path = require('path');
+import {HtmlToCompiledTemplate} from "./custom_types";
+import {
+    KNOWN_SUBSTITUTE_VARIABLES,
+    OUTPUT_FOLDER,
+    PAGE_DESCRIPTIONS,
+    PROJECTS_DESCRIPTIONS,
+    PUG_OPTIONS,
+    RESOURCES_FOLDER,
+    VIEWS_FOLDER
+} from "./constants";
 
-type Metadata = { [key: string]: any };
-type Variables = Record<string, any>
-type FunctionToMetadata = [Function, Metadata];
-
-type HtmlToTemplate = Record<string, Metadata>;
-type HtmlToCompiledTemplate = Record<string, FunctionToMetadata>;
-
-const outputFolder = '../gordon1992.github.io/';
-const resourcesFolder = './resources/';
-const viewsFolder = './views/';
-const options = {
-    pretty: true
-};
-
-const projects: { [key: string]: any } = require("./projects.json");
-
-const variables: Variables = {
-    "$PROJECTS": projects
+function readInPageDescriptions(): void {
+    Object.entries(PAGE_DESCRIPTIONS).forEach(([_filename, metadata]) => {
+        Object.entries(metadata).forEach(([variable, potentialSubstitution]) => {
+            if (potentialSubstitution.startsWith("$")) {
+                metadata[variable] = KNOWN_SUBSTITUTE_VARIABLES[potentialSubstitution];
+            } else if (variable == 'projectName') {
+                metadata['project'] = PROJECTS_DESCRIPTIONS[potentialSubstitution]
+            }
+        });
+    });
 }
 
-function ensureDirectoryExistence(filePath: string) {
+function compileTemplates(): HtmlToCompiledTemplate {
+    let compiledViews: HtmlToCompiledTemplate = {};
+    Object.entries(PAGE_DESCRIPTIONS).forEach(([filename, metadata]) => {
+        compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
+    });
+    return compiledViews;
+}
+
+function generateHtmlPages(): void {
+    let compiledViews = compileTemplates();
+    Object.entries(compiledViews).forEach(([filename, functionAndMetadata]) => {
+        let outputFile = OUTPUT_FOLDER + filename;
+        console.log("Going to generate " + outputFile);
+        let compiledFunction = functionAndMetadata[0];
+        let metadata = functionAndMetadata[1];
+        let generatedHtml = compiledFunction(metadata);
+        ensureDirectoryExistence(outputFile);
+        fs.writeFileSync(outputFile, generatedHtml);
+    });
+}
+
+function copyStaticResources(): void {
+    console.log("Going to copy resources from " + RESOURCES_FOLDER + " to " + OUTPUT_FOLDER);
+    fse.copySync(RESOURCES_FOLDER, OUTPUT_FOLDER);
+}
+
+function ensureDirectoryExistence(filePath: string): void {
     const dirname = path.dirname(filePath);
     if (fs.existsSync(dirname)) {
         return;
@@ -31,36 +59,10 @@ function ensureDirectoryExistence(filePath: string) {
     fs.mkdirSync(dirname, {recursive: true});
 }
 
-const pages: HtmlToTemplate = require("./pages.json");
-Object.entries(pages).forEach(([_filename, metadata]) => {
-    Object.entries(metadata).forEach(([variable, potentialSubstitution]) => {
-        if (potentialSubstitution.startsWith("$")) {
-            metadata[variable] = variables[potentialSubstitution];
-        } else if (variable == 'projectName') {
-            metadata['project'] = projects[potentialSubstitution]
-        }
-    });
-});
+function main(): void {
+    readInPageDescriptions();
+    generateHtmlPages();
+    copyStaticResources();
+}
 
-let compiledViews: HtmlToCompiledTemplate = {};
-Object.entries(pages).forEach(([filename, metadata]) => {
-    compiledViews[filename] = [pug.compileFile(viewsFolder + metadata['template'], options), metadata];
-});
-
-console.log("Clearing out " + outputFolder + " in preparation for website generation");
-//fse.emptyDirSync(outputFolder);
-console.log(outputFolder + " cleared out.");
-
-Object.entries(compiledViews).forEach(([filename, functionAndMetadata]) => {
-    let outputFile = outputFolder + filename;
-    console.log("Going to generate " + outputFile);
-    console.log(functionAndMetadata[1]);
-    let generatedHtml = functionAndMetadata[0](functionAndMetadata[1]);
-    ensureDirectoryExistence(outputFile);
-    fs.writeFileSync(outputFile, generatedHtml);
-    console.log("Generated " + outputFile);
-});
-
-console.log("Going to copy resources from " + resourcesFolder + " to " + outputFolder);
-fse.copySync(resourcesFolder, outputFolder);
-console.log("Copied resources from " + resourcesFolder + " to " + outputFolder);
+main();
