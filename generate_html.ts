@@ -20,14 +20,14 @@ function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
 }
 
 function cleanDirectory(): void {
-    fse.remove(OUTPUT_FOLDER + "css");
-    fse.remove(OUTPUT_FOLDER + "images");
-    fse.remove(OUTPUT_FOLDER + "pdf");
-    fse.remove(OUTPUT_FOLDER + "projects");
-    fse.remove(OUTPUT_FOLDER + "404.html");
-    fse.remove(OUTPUT_FOLDER + "CNAME");
-    fse.remove(OUTPUT_FOLDER + "favicon.ico");
-    fse.remove(OUTPUT_FOLDER + "index.html");
+    fse.removeSync(OUTPUT_FOLDER + "css");
+    fse.removeSync(OUTPUT_FOLDER + "images");
+    fse.removeSync(OUTPUT_FOLDER + "pdf");
+    fse.removeSync(OUTPUT_FOLDER + "projects");
+    fse.removeSync(OUTPUT_FOLDER + "404.html");
+    fse.removeSync(OUTPUT_FOLDER + "CNAME");
+    fse.removeSync(OUTPUT_FOLDER + "favicon.ico");
+    fse.removeSync(OUTPUT_FOLDER + "index.html");
 }
 
 function generateHtmlPages(): void {
