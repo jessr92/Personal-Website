@@ -1,4 +1,3 @@
-import fs = require('fs');
 import fse = require('fs-extra');
 import pug = require('pug');
 import path = require('path');
@@ -40,7 +39,7 @@ function generateHtmlPages(): void {
         console.log(metadata);
         let generatedHtml = compiledFunction(metadata);
         ensureDirectoryExistence(outputFile);
-        fs.writeFileSync(outputFile, generatedHtml);
+        fse.writeFileSync(outputFile, generatedHtml);
     });
 }
 
@@ -51,10 +50,10 @@ function copyStaticResources(): void {
 
 function ensureDirectoryExistence(filePath: string): void {
     const dirname = path.dirname(filePath);
-    if (fs.existsSync(dirname)) {
+    if (fse.existsSync(dirname)) {
         return;
     }
-    fs.mkdirSync(dirname, {recursive: true});
+    fse.mkdirSync(dirname, {recursive: true});
 }
 
 function main(): void {
