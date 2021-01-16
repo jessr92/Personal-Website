@@ -47,5 +47,9 @@
       "project_description": "This website is hosted on github.io and I have written a very basic TypeScript wrapper around pug which reads in a JSON file called pages.json and generates the required HTML pages. It's a \"static website generator\" of sorts but one that only contains sufficient functionality for my use cases and nothing else.",
       "github_url": "https://github.com/gordon1992/Personal-Website"
     }
+  },
+  "404.html": {
+    "template": "404.pug",
+    "description": "404 - Page Not Found"
   }
 }
