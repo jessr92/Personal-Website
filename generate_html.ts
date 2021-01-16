@@ -19,6 +19,17 @@ function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
     return compiledViews;
 }
 
+function cleanDirectory(): void {
+    fse.remove(OUTPUT_FOLDER + "css");
+    fse.remove(OUTPUT_FOLDER + "images");
+    fse.remove(OUTPUT_FOLDER + "pdf");
+    fse.remove(OUTPUT_FOLDER + "projects");
+    fse.remove(OUTPUT_FOLDER + "404.html");
+    fse.remove(OUTPUT_FOLDER + "CNAME");
+    fse.remove(OUTPUT_FOLDER + "favicon.ico");
+    fse.remove(OUTPUT_FOLDER + "index.html");
+}
+
 function generateHtmlPages(): void {
     let compiledViews = compileTemplates();
     Object.entries(compiledViews).forEach(([filename, functionAndMetadata]) => {
@@ -55,6 +66,7 @@ function ensureDirectoryExistence(filePath: string): void {
 }
 
 function main(): void {
+    cleanDirectory();
     generateHtmlPages();
     generateErrorPages();
     copyStaticResources();
