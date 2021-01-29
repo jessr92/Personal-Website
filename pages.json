@@ -5,7 +5,21 @@
   },
   "interests/index.html": {
     "template": "interests.pug",
-    "description": "My hobbies and interests"
+    "description": "My hobbies and interests",
+    "interests": [
+      {
+        "key": "3DPrinting",
+        "title": "3D Printing"
+      }
+    ]
+  },
+  "interests/3DPrinting/index.html": {
+    "template": "interest.pug",
+    "description": "3D Printing",
+    "interest": {
+      "title": "3D Printing",
+      "description": "I have a 3D printer. Content TBD"
+    }
   },
   "projects/index.html": {
     "template": "projects.pug",

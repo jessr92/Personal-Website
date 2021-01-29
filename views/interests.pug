@@ -1,4 +1,8 @@
 extends base.pug
 
 block content
-    p My hobbies and interests (content TBD)
+    h3 My hobbies and interests
+    ul
+        each interest in interests
+            li
+                a(href="/interests/" + interest.key) #{interest.title}
