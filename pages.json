@@ -1,7 +1,7 @@
 {
   "index.html": {
     "template": "index.pug",
-    "description": "Homepage for Gordon Reid"
+    "description": "Homepage"
   },
   "interests/index.html": {
     "template": "interests.pug",
