@@ -1,11 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
 }
 
 header {
@@ -20,6 +15,10 @@ header {
 nav {
     background: #00008b;
     text-align: center;
+}
+
+nav ul {
+    margin-top: 0;
 }
 
 nav li {
