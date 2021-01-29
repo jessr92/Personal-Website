@@ -21,6 +21,7 @@ function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
 function cleanDirectory(): void {
     fse.removeSync(OUTPUT_FOLDER + "css");
     fse.removeSync(OUTPUT_FOLDER + "images");
+    fse.removeSync(OUTPUT_FOLDER + "interests");
     fse.removeSync(OUTPUT_FOLDER + "pdf");
     fse.removeSync(OUTPUT_FOLDER + "projects");
     fse.removeSync(OUTPUT_FOLDER + "404.html");
