@@ -3,6 +3,10 @@
     "template": "index.pug",
     "description": "Homepage for Gordon Reid"
   },
+  "interests/index.html": {
+    "template": "interests.pug",
+    "description": "My hobbies and interests"
+  },
   "projects/index.html": {
     "template": "projects.pug",
     "description": "List of software development projects",
