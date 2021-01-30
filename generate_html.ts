@@ -3,8 +3,10 @@ import pug = require('pug');
 import path = require('path');
 import {HtmlOutputPathToCompiledTemplateWithMetadata} from "./custom_types";
 import {
+    BASE_PAGES,
+    INTERESTS_PAGES,
     OUTPUT_FOLDER,
-    PAGE_DESCRIPTIONS,
+    PROJECTS_PAGES,
     PUG_OPTIONS,
     RESOURCES_FOLDER,
     VIEWS_FOLDER
@@ -12,7 +14,13 @@ import {
 
 function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
     let compiledViews: HtmlOutputPathToCompiledTemplateWithMetadata = {};
-    Object.entries(PAGE_DESCRIPTIONS).forEach(([filename, metadata]) => {
+    Object.entries(BASE_PAGES).forEach(([filename, metadata]) => {
+        compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
+    });
+    Object.entries(INTERESTS_PAGES).forEach(([filename, metadata]) => {
+        compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
+    });
+    Object.entries(PROJECTS_PAGES).forEach(([filename, metadata]) => {
         compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
     });
     return compiledViews;
