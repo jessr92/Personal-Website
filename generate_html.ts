@@ -1,27 +1,24 @@
 import fse = require('fs-extra');
 import pug = require('pug');
 import path = require('path');
-import {HtmlOutputPathToCompiledTemplateWithMetadata} from "./custom_types";
+import {HtmlOutputPathToCompiledTemplateWithMetadata, HtmlOutputPathToTemplateMetadata} from "./custom_types";
 import {
-    BASE_PAGES,
-    INTERESTS_PAGES,
     OUTPUT_FOLDER,
-    PROJECTS_PAGES,
+    PAGES_FOLDER,
     PUG_OPTIONS,
     RESOURCES_FOLDER,
-    VIEWS_FOLDER
+    VIEWS_FOLDER,
 } from "./constants";
 
 function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
     let compiledViews: HtmlOutputPathToCompiledTemplateWithMetadata = {};
-    Object.entries(BASE_PAGES).forEach(([filename, metadata]) => {
-        compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
-    });
-    Object.entries(INTERESTS_PAGES).forEach(([filename, metadata]) => {
-        compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
-    });
-    Object.entries(PROJECTS_PAGES).forEach(([filename, metadata]) => {
-        compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
+    let pages = fse.readdirSync(PAGES_FOLDER);
+    pages.forEach(page => {
+        console.log("Found page folder: " + page);
+        let pageContent: HtmlOutputPathToTemplateMetadata = require("./" + PAGES_FOLDER + "/" + page);
+        Object.entries(pageContent).forEach(([filename, metadata]) => {
+            compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
+        });
     });
     return compiledViews;
 }
