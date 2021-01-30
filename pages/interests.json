@@ -1,0 +1,22 @@
+{
+  "interests/index.html": {
+    "template": "list.pug",
+    "description": "My hobbies and interests",
+    "title": "My hobbies and interests",
+    "directory": "interests",
+    "list": [
+      {
+        "key": "3DPrinting",
+        "title": "3D Printing"
+      }
+    ]
+  },
+  "interests/3DPrinting/index.html": {
+    "template": "interest.pug",
+    "description": "3D Printing",
+    "interest": {
+      "title": "3D Printing",
+      "description": "I have a 3D printer. Content TBD"
+    }
+  }
+}

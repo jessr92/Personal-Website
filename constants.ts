@@ -6,4 +6,6 @@ export const VIEWS_FOLDER = './views/';
 export const PUG_OPTIONS = {
     pretty: true
 };
-export const PAGE_DESCRIPTIONS: HtmlOutputPathToTemplateMetadata = require("./pages.json");
+export const BASE_PAGES: HtmlOutputPathToTemplateMetadata = require("./pages/base.json");
+export const INTERESTS_PAGES: HtmlOutputPathToTemplateMetadata = require("./pages/interests.json");
+export const PROJECTS_PAGES: HtmlOutputPathToTemplateMetadata = require("./pages/projects.json");
