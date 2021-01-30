@@ -23,16 +23,10 @@ function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
     return compiledViews;
 }
 
-function cleanDirectory(): void {
-    fse.removeSync(OUTPUT_FOLDER + "css");
-    fse.removeSync(OUTPUT_FOLDER + "images");
-    fse.removeSync(OUTPUT_FOLDER + "interests");
-    fse.removeSync(OUTPUT_FOLDER + "pdf");
-    fse.removeSync(OUTPUT_FOLDER + "projects");
-    fse.removeSync(OUTPUT_FOLDER + "404.html");
-    fse.removeSync(OUTPUT_FOLDER + "CNAME");
-    fse.removeSync(OUTPUT_FOLDER + "favicon.ico");
-    fse.removeSync(OUTPUT_FOLDER + "index.html");
+function cleanOutputFolder(): void {
+    fse.readdirSync(OUTPUT_FOLDER)
+        .filter(fileOrFolder => !fileOrFolder.startsWith("."))
+        .forEach(fileOrFolder => fse.removeSync(fileOrFolder));
 }
 
 function generateHtmlPages(): void {
@@ -63,7 +57,7 @@ function ensureDirectoryExistence(filePath: string): void {
 }
 
 function main(): void {
-    cleanDirectory();
+    cleanOutputFolder();
     generateHtmlPages();
     copyStaticResources();
 }
