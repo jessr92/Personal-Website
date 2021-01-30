@@ -1,8 +1,0 @@
-extends base.pug
-
-block content
-    h3 My hobbies and interests
-    ul
-        each interest in interests
-            li
-                a(href="/interests/" + interest.key) #{interest.title}

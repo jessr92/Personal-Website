@@ -12,9 +12,11 @@
     ]
   },
   "interests/index.html": {
-    "template": "interests.pug",
+    "template": "list.pug",
     "description": "My hobbies and interests",
-    "interests": [
+    "title": "My hobbies and interests",
+    "directory": "interests",
+    "list": [
       {
         "key": "3DPrinting",
         "title": "3D Printing"
@@ -30,9 +32,11 @@
     }
   },
   "projects/index.html": {
-    "template": "projects.pug",
+    "template": "list.pug",
     "description": "List of software development projects",
-    "projects": [
+    "title": "Software Projects",
+    "directory": "projects",
+    "list": [
       {
         "key": "DocumentFiltering",
         "title": "GPU-Accelerated Document Filtering in OpenCL"

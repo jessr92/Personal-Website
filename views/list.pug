@@ -1,0 +1,8 @@
+extends base.pug
+
+block content
+    h3 #{title}
+    ul
+        each entry in list
+            li
+                a(href="/" + directory + "/" + entry.key) #{entry.title}
