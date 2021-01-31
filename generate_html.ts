@@ -11,11 +11,11 @@ import {
 } from "./constants";
 
 function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
-    let compiledViews: HtmlOutputPathToCompiledTemplateWithMetadata = {};
-    let pages = fse.readdirSync(PAGES_FOLDER);
+    const compiledViews: HtmlOutputPathToCompiledTemplateWithMetadata = {};
+    const pages = fse.readdirSync(PAGES_FOLDER);
     pages.forEach(page => {
         console.log("Found page folder: " + page);
-        let pageContent: HtmlOutputPathToTemplateMetadata = require("./" + PAGES_FOLDER + "/" + page);
+        const pageContent: HtmlOutputPathToTemplateMetadata = require(PAGES_FOLDER + page);
         Object.entries(pageContent).forEach(([filename, metadata]) => {
             compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
         });
@@ -30,14 +30,14 @@ function cleanOutputFolder(): void {
 }
 
 function generateHtmlPages(): void {
-    let compiledViews = compileTemplates();
+    const compiledViews = compileTemplates();
     Object.entries(compiledViews).forEach(([filename, functionAndMetadata]) => {
-        let outputFile = OUTPUT_FOLDER + filename;
+        const outputFile = OUTPUT_FOLDER + filename;
         console.log("Going to generate " + outputFile);
-        let compiledFunction = functionAndMetadata[0];
-        let metadata = functionAndMetadata[1];
+        const compiledFunction = functionAndMetadata[0];
+        const metadata = functionAndMetadata[1];
         console.log(metadata);
-        let generatedHtml = compiledFunction(metadata);
+        const generatedHtml = compiledFunction(metadata);
         ensureDirectoryExistence(outputFile);
         fse.writeFileSync(outputFile, generatedHtml);
     });
