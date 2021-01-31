@@ -14,7 +14,7 @@ function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
     const compiledViews: HtmlOutputPathToCompiledTemplateWithMetadata = {};
     const pages = fse.readdirSync(PAGES_FOLDER);
     pages.forEach(page => {
-        console.log("Found page folder: " + page);
+        console.log("Found page file: " + page);
         const pageContent: HtmlOutputPathToTemplateMetadata = require(PAGES_FOLDER + page);
         Object.entries(pageContent).forEach(([filename, metadata]) => {
             compiledViews[filename] = [pug.compileFile(VIEWS_FOLDER + metadata['template'], PUG_OPTIONS), metadata];
