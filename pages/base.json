@@ -12,7 +12,11 @@
     ]
   },
   "404.html": {
-    "template": "404.pug",
-    "description": "404 - Page Not Found"
+    "template": "standard.pug",
+    "description": "404 - Page Not Found",
+    "title": "404 - Page Not Found",
+    "paragraphs": [
+      "Sorry, page not found. Please navigate using the links above."
+    ]
   }
 }
