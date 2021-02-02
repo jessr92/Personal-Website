@@ -26,7 +26,7 @@ function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
 function cleanOutputFolder(): void {
     fse.readdirSync(OUTPUT_FOLDER)
         .filter(fileOrFolder => !fileOrFolder.startsWith("."))
-        .forEach(fileOrFolder => fse.removeSync(fileOrFolder));
+        .forEach(fileOrFolder => fse.removeSync(OUTPUT_FOLDER + fileOrFolder));
 }
 
 function generateHtmlPages(): void {
