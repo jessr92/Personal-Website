@@ -1,5 +1,10 @@
 extends base.pug
 
+append extra-css
+    link(rel="stylesheet", href="/css/imageGallery.css")
+
 block content
     h3 #{interest.title}
     p #{interest.description}
+    if images !== undefined && images.length > 0
+        include imageGallery

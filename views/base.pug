@@ -6,6 +6,7 @@ html(lang="en-gb")
         meta(name="description", content=description)
         link(rel="shortcut icon", type="image/x-icon", sizes="16x16", href="/favicon.ico")
         link(rel="stylesheet", href="/css/index.css")
+        block extra-css
         title Gordon Reid - #{description}
     body
         header Gordon Reid
@@ -19,3 +20,4 @@ html(lang="en-gb")
                     a(href="/interests") Interests
         main
             block content
+        block javascript

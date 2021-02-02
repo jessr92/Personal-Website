@@ -1,0 +1,81 @@
+.container {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.slide-container {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #3a76b7;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.counter {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.thumbnails:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.thumbnail-container {
+    float: left;
+    margin: 0 5px;
+    height: 100px;
+    width: 100px;
+}
+
+.thumbnail {
+    cursor: pointer;
+    opacity: 0.6;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.active,
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.slide {
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+}

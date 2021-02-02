@@ -17,6 +17,41 @@
     "interest": {
       "title": "3D Printing",
       "description": "I have a 3D printer. Content TBD"
-    }
+    },
+    "gallery": {
+      "title": "Here are some of the creations I have printed."
+    },
+    "images": [
+      {
+        "filename": "https://via.placeholder.com/500",
+        "thumbnail": "https://via.placeholder.com/500",
+        "caption": "caption1"
+      },
+      {
+        "filename": "https://via.placeholder.com/600",
+        "thumbnail": "https://via.placeholder.com/600",
+        "caption": "caption2"
+      },
+      {
+        "filename": "https://via.placeholder.com/700",
+        "thumbnail": "https://via.placeholder.com/700",
+        "caption": "caption3"
+      },
+      {
+        "filename": "https://via.placeholder.com/800",
+        "thumbnail": "https://via.placeholder.com/800",
+        "caption": "caption4"
+      },
+      {
+        "filename": "https://via.placeholder.com/900",
+        "thumbnail": "https://via.placeholder.com/900",
+        "caption": "caption5"
+      },
+      {
+        "filename": "https://via.placeholder.com/1000",
+        "thumbnail": "https://via.placeholder.com/1000",
+        "caption": "caption6"
+      }
+    ]
   }
 }
