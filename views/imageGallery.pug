@@ -1,16 +1,16 @@
 p #{gallery.title}
-div(class="container")
+div(id="imageGallery")
     each image, index in images
         div(class="slide-container")
             div(class="counter") #{index + 1} / #{images.length}
             img(class="slide" src=image.filename alt=image.caption)
-    a(class="prev" onclick="plusSlides(-1)") &#10094;
-    a(class="next" onclick="plusSlides(1)") &#10095;
-    div(class="caption-container")
+    a(id="prevButton") &#10094;
+    a(id="nextButton") &#10095;
+    div(id="caption-container")
         p(id="caption")
     div(class="thumbnails")
         each image, index in images
             div(class="thumbnail-container")
-                img(class="thumbnail" src=image.thumbnail alt=image.caption onclick="currentSlide(" + (index + 1) + ")")
+                img(class="thumbnail" src=image.thumbnail alt=image.caption)
 
 script(src="/js/imageGallery.js")
