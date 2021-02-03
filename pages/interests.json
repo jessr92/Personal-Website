@@ -23,33 +23,33 @@
     },
     "images": [
       {
-        "filename": "https://via.placeholder.com/500",
-        "thumbnail": "https://via.placeholder.com/500",
+        "filename": "https://via.placeholder.com/350x165",
+        "thumbnail": "https://via.placeholder.com/350x165",
         "caption": "caption1"
       },
       {
-        "filename": "https://via.placeholder.com/600",
-        "thumbnail": "https://via.placeholder.com/600",
+        "filename": "https://via.placeholder.com/165x350",
+        "thumbnail": "https://via.placeholder.com/165x350",
         "caption": "caption2"
       },
       {
-        "filename": "https://via.placeholder.com/700",
-        "thumbnail": "https://via.placeholder.com/700",
+        "filename": "https://via.placeholder.com/700x500",
+        "thumbnail": "https://via.placeholder.com/700x500",
         "caption": "caption3"
       },
       {
-        "filename": "https://via.placeholder.com/800",
-        "thumbnail": "https://via.placeholder.com/800",
+        "filename": "https://via.placeholder.com/800x500",
+        "thumbnail": "https://via.placeholder.com/800x500",
         "caption": "caption4"
       },
       {
-        "filename": "https://via.placeholder.com/900",
-        "thumbnail": "https://via.placeholder.com/900",
+        "filename": "https://via.placeholder.com/900x500",
+        "thumbnail": "https://via.placeholder.com/900x500",
         "caption": "caption5"
       },
       {
-        "filename": "https://via.placeholder.com/1000",
-        "thumbnail": "https://via.placeholder.com/1000",
+        "filename": "https://via.placeholder.com/1000x500",
+        "thumbnail": "https://via.placeholder.com/1000x500",
         "caption": "caption6"
       }
     ]
