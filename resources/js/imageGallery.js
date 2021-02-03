@@ -38,6 +38,17 @@
         document.querySelectorAll('.thumbnail').forEach((thumbnail, index) => {
             thumbnail.addEventListener('click', () => showSlide(index + 1));
         });
+        document.addEventListener("keydown", function (event) {
+            event.preventDefault();
+            switch (event.key) {
+                case "ArrowLeft":
+                    previousSlide();
+                    break;
+                case "ArrowRight":
+                    nextSlide();
+                    break;
+            }
+        });
     }
 })(window);
 window.setupSlides();
