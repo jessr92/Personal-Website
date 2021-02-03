@@ -1,4 +1,4 @@
-.container {
+#imageGallery {
     position: relative;
     box-sizing: border-box;
 }
@@ -7,8 +7,8 @@
     display: none;
 }
 
-.prev,
-.next {
+#prevButton,
+#nextButton {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -24,13 +24,13 @@
     background-color: #3a76b7;
 }
 
-.next {
+#nextButton {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
+#prevButton:hover,
+#nextButton:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -42,7 +42,7 @@
     top: 0;
 }
 
-.caption-container {
+#caption-container {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
