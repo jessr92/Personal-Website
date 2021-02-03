@@ -8,6 +8,14 @@
       {
         "key": "3DPrinting",
         "title": "3D Printing"
+      },
+      {
+        "key": "baking",
+        "title": "Baking"
+      },
+      {
+        "key": "cooking",
+        "title": "Cooking"
       }
     ]
   },
@@ -51,6 +59,47 @@
         "filename": "https://via.placeholder.com/1000x500",
         "thumbnail": "https://via.placeholder.com/1000x500",
         "caption": "caption6"
+      }
+    ]
+  },
+  "interests/baking/index.html": {
+    "template": "interest.pug",
+    "description": "Baking",
+    "interest": {
+      "title": "Baking",
+      "description": "I like to bake. Content TBD"
+    },
+    "gallery": {
+      "title": "Here are some of the things I have baked."
+    },
+    "images": [
+      {
+        "filename": "/images/cheesecake.jpg",
+        "thumbnail": "/images/cheesecake_thumb.jpg",
+        "caption": "Cheesecake"
+      },
+      {
+        "filename": "/images/cookies.jpg",
+        "thumbnail": "/images/cookies_thumb.jpg",
+        "caption": "Cookies"
+      }
+    ]
+  },
+  "interests/cooking/index.html": {
+    "template": "interest.pug",
+    "description": "Cooking",
+    "interest": {
+      "title": "Cooking",
+      "description": "I like to cook. Content TBD"
+    },
+    "gallery": {
+      "title": "Here are some of the things I have cooked."
+    },
+    "images": [
+      {
+        "filename": "/images/chickpea_swarma.jpg",
+        "thumbnail": "/images/chickpea_swarma_thumb.jpg",
+        "caption": "Chickpea Swarma"
       }
     ]
   }
