@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-.modal {
+#modal {
     position: fixed;
     z-index: 1;
     padding-top: 100px;
@@ -13,16 +13,6 @@
     height: 100%;
     overflow: auto;
     background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
 }
 
 .slide-container {
