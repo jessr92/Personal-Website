@@ -34,11 +34,9 @@
     function toggleModal() {
         const modalOpen = document.getElementById('imageGallery') === null;
         if (modalOpen) {
-            document.getElementsByClassName('modal')[0].id = "imageGallery";
-            document.getElementsByClassName('modal')[0].className = "";
+            document.getElementById('modal').id = "imageGallery";
         } else {
-            document.getElementById('imageGallery').className = "modal";
-            document.getElementById('imageGallery').id = "";
+            document.getElementById('imageGallery').id = "modal";
         }
     }
 
