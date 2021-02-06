@@ -31,12 +31,26 @@
         captionText.innerHTML = thumbnails[slideIndex - 1].alt;
     }
 
+    function toggleModal() {
+        const modalOpen = document.getElementById('imageGallery') === null;
+        if (modalOpen) {
+            document.getElementsByClassName('modal')[0].id = "imageGallery";
+            document.getElementsByClassName('modal')[0].className = "";
+        } else {
+            document.getElementById('imageGallery').className = "modal";
+            document.getElementById('imageGallery').id = "";
+        }
+    }
+
     exports.setupSlides = function () {
         showSlide(1);
         document.querySelector('#prevButton').addEventListener('click', previousSlide);
         document.querySelector('#nextButton').addEventListener('click', nextSlide);
         document.querySelectorAll('.thumbnail').forEach((thumbnail, index) => {
             thumbnail.addEventListener('click', () => showSlide(index + 1));
+        });
+        document.querySelectorAll('.slide').forEach((slide) => {
+            slide.addEventListener('click', toggleModal);
         });
         document.addEventListener("keydown", function (event) {
             event.preventDefault();
