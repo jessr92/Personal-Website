@@ -19,6 +19,23 @@
     display: none;
 }
 
+#closeButton {
+    display: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#closeButton:hover,
+#closeButton:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #prevButton,
 #nextButton {
     cursor: pointer;
