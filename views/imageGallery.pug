@@ -1,5 +1,6 @@
 p #{gallery.title}
 div(id="imageGallery")
+    span(id="closeButton") &times;
     each image, index in images
         div(class="slide-container")
             div(class="counter") #{index + 1} / #{images.length}

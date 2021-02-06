@@ -32,11 +32,13 @@
     }
 
     function toggleModal() {
-        const modalOpen = document.getElementById('imageGallery') === null;
-        if (modalOpen) {
+        const modalCurrentlyOpen = document.getElementById('imageGallery') === null;
+        if (modalCurrentlyOpen) {
             document.getElementById('modal').id = "imageGallery";
+            document.getElementById('closeButton').style.display = "none";
         } else {
             document.getElementById('imageGallery').id = "modal";
+            document.getElementById('closeButton').style.display = "block";
         }
     }
 
