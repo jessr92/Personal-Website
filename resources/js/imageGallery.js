@@ -46,6 +46,7 @@
         showSlide(1);
         document.querySelector('#prevButton').addEventListener('click', previousSlide);
         document.querySelector('#nextButton').addEventListener('click', nextSlide);
+        document.querySelector('#closeButton').addEventListener('click', toggleModal);
         document.querySelectorAll('.thumbnail').forEach((thumbnail, index) => {
             thumbnail.addEventListener('click', () => showSlide(index + 1));
         });
