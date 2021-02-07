@@ -35,7 +35,9 @@
 }
 
 #prevButton,
-#nextButton {
+#nextButton,
+#prevButton:hover,
+#nextButton:hover {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -56,10 +58,6 @@
     border-radius: 3px 0 0 3px;
 }
 
-#prevButton:hover,
-#nextButton:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 .counter {
     color: #f2f2f2;
@@ -114,10 +112,6 @@
     max-height: 80vh;
 }
 
-#modal #caption-container {
-    max-height: 7vh;
-}
-
 #modal .thumbnails {
-    max-height: 13vh;
+    max-height: 10vh;
 }
