@@ -18,8 +18,7 @@
     display: none;
 }
 
-#closeButton {
-    display: none;
+#fullScreenButton {
     color: white;
     position: absolute;
     top: 10px;
@@ -28,8 +27,8 @@
     font-weight: bold;
 }
 
-#closeButton:hover,
-#closeButton:focus {
+#fullScreenButton:hover,
+#fullScreenButton:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
