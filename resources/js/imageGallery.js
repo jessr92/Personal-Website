@@ -35,10 +35,10 @@
         const modalCurrentlyOpen = document.getElementById('imageGallery') === null;
         if (modalCurrentlyOpen) {
             document.getElementById('modal').id = "imageGallery";
-            document.getElementById('closeButton').style.display = "none";
+            document.getElementById('fullScreenButton').textContent = "⤡";
         } else {
             document.getElementById('imageGallery').id = "modal";
-            document.getElementById('closeButton').style.display = "block";
+            document.getElementById('fullScreenButton').textContent = "×";
         }
     }
 
@@ -46,7 +46,7 @@
         showSlide(1);
         document.querySelector('#prevButton').addEventListener('click', previousSlide);
         document.querySelector('#nextButton').addEventListener('click', nextSlide);
-        document.querySelector('#closeButton').addEventListener('click', toggleModal);
+        document.querySelector('#fullScreenButton').addEventListener('click', toggleModal);
         document.querySelectorAll('.thumbnail').forEach((thumbnail, index) => {
             thumbnail.addEventListener('click', () => showSlide(index + 1));
         });
