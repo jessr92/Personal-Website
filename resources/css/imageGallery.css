@@ -6,11 +6,10 @@
 #modal {
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: auto;
     background-color: black;
 }
@@ -103,8 +102,23 @@
     opacity: 1;
 }
 
-.slide {
+#imageGallery .slide {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+}
+
+#modal .slide {
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+    max-height: 80vh;
+}
+
+#modal #caption-container {
+    max-height: 7vh;
+}
+
+#modal .thumbnails {
+    max-height: 13vh;
 }
