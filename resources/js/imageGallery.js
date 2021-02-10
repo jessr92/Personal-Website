@@ -1,5 +1,5 @@
 (function (exports) {
-    let slideIndex = 1;
+    let slideIndex = 0;
 
     function nextSlide() {
         showSlide(slideIndex + 1);
@@ -10,25 +10,19 @@
     }
 
     function showSlide(n) {
-        slideIndex = n;
         const slides = document.getElementsByClassName("slide-container");
         const thumbnails = document.getElementsByClassName("thumbnail");
         const captionText = document.getElementById("caption");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
+        slideIndex = ((n % slides.length) + slides.length) % slides.length;
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         for (let i = 0; i < thumbnails.length; i++) {
             thumbnails[i].className = thumbnails[i].className.replace(" active", "");
         }
-        slides[slideIndex - 1].style.display = "block";
-        thumbnails[slideIndex - 1].className += " active";
-        captionText.innerHTML = thumbnails[slideIndex - 1].alt;
+        slides[slideIndex].style.display = "block";
+        thumbnails[slideIndex].className += " active";
+        captionText.innerHTML = thumbnails[slideIndex].alt;
     }
 
     function toggleModal() {
@@ -43,7 +37,7 @@
     }
 
     exports.setupSlides = function () {
-        showSlide(1);
+        showSlide(0);
         document.querySelector('#prevButton').addEventListener('click', previousSlide);
         document.querySelector('#nextButton').addEventListener('click', nextSlide);
         document.querySelector('#fullScreenButton').addEventListener('click', toggleModal);
@@ -64,6 +58,6 @@
                     break;
             }
         });
-    }
+    };
 })(window);
 window.setupSlides();
