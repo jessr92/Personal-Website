@@ -82,6 +82,11 @@
         "filename": "/images/cookies.jpg",
         "thumbnail": "/images/cookies_thumb.jpg",
         "caption": "Cookies"
+      },
+      {
+        "filename": "/images/chocolate_raspberry_muffins.jpg",
+        "thumbnail": "/images/chocolate_raspberry_muffins.jpg",
+        "caption": "Chocolate and Raspberry Muffins"
       }
     ]
   },
