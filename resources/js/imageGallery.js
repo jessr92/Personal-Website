@@ -42,7 +42,7 @@
         document.querySelector('#nextButton').addEventListener('click', nextSlide);
         document.querySelector('#fullScreenButton').addEventListener('click', toggleModal);
         document.querySelectorAll('.thumbnail').forEach((thumbnail, index) => {
-            thumbnail.addEventListener('click', () => showSlide(index + 1));
+            thumbnail.addEventListener('click', () => showSlide(index));
         });
         document.querySelectorAll('.slide').forEach((slide) => {
             slide.addEventListener('click', toggleModal);
