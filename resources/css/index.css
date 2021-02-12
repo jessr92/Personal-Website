@@ -45,8 +45,17 @@ main {
     max-width: 800px;
 }
 
+main ul {
+    margin: 5px 0;
+}
+
+main h3 {
+    margin: 5px 0;
+}
+
 main p {
     line-height: 1.6;
+    margin: 5px 0;
 }
 
 main li {
