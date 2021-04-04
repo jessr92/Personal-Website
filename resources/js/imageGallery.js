@@ -36,7 +36,24 @@
         }
     }
 
+    function adjustElementDisplay() {
+        document.querySelectorAll('.no-js-caption').forEach( (caption) => {
+            caption.style.display = "none";
+        });
+        document.querySelector('#prevButton').style.display = "block";
+        document.querySelector('#nextButton').style.display = "block";
+        document.querySelector('#fullScreenButton').style.display = "block";
+        document.querySelector('#caption-container').style.display = "block";
+        document.querySelectorAll('.counter').forEach( (caption) => {
+            caption.style.display = "block";
+        });
+        document.querySelectorAll('.thumbnail-container').forEach( (caption) => {
+            caption.style.display = "block";
+        });
+    }
+
     exports.setupSlides = function () {
+        adjustElementDisplay();
         showSlide(0);
         document.querySelector('#prevButton').addEventListener('click', previousSlide);
         document.querySelector('#nextButton').addEventListener('click', nextSlide);

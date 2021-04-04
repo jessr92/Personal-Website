@@ -5,6 +5,7 @@ div(id="imageGallery")
         div(class="slide-container")
             div(class="counter") #{index + 1} / #{images.length}
             img(class="slide" src=image.filename alt=image.caption)
+            p(class="no-js-caption") #{image.caption}
     a(id="prevButton") &#10094;
     a(id="nextButton") &#10095;
     div(id="caption-container")

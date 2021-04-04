@@ -14,11 +14,8 @@
     background-color: black;
 }
 
-.slide-container {
-    display: none;
-}
-
 #fullScreenButton {
+    display: none;
     color: white;
     position: absolute;
     top: 10px;
@@ -54,12 +51,17 @@
 }
 
 #nextButton {
+    display: none;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+#prevButton {
+    display: none;
+}
 
 .counter {
+    display: none;
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -68,6 +70,7 @@
 }
 
 #caption-container {
+    display: none;
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
@@ -81,6 +84,7 @@
 }
 
 .thumbnail-container {
+    display: none;
     float: left;
     margin-right: 5px;
     height: 100px;
