@@ -22,7 +22,7 @@
         }
         slides[slideIndex].style.display = "block";
         thumbnails[slideIndex].className += " active";
-        captionText.innerHTML = thumbnails[slideIndex].alt;
+        captionText.innerText = thumbnails[slideIndex].alt;
     }
 
     function toggleModal() {
