@@ -42,7 +42,7 @@
     "description": "Information on the project that generates this website",
     "project": {
       "title": "This website",
-      "description": "This website is hosted on github.io and I have written a very basic TypeScript wrapper around pug which reads in a JSON files and generates the required HTML pages. It's a \"static website generator\" of sorts but one that only contains sufficient functionality for my use cases and nothing else.",
+      "description": "This website is hosted on github.io and I have written a very basic TypeScript wrapper around Pug which reads in JSON files and generates the required HTML pages. It's a \"static website generator\" of sorts but one that only contains sufficient functionality for my use cases and nothing else.",
       "github_url": "https://github.com/gordon1992/Personal-Website"
     }
   }
