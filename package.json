@@ -21,7 +21,7 @@
     "pug": "^3.0.2"
   },
   "devDependencies": {
-    "@types/fs-extra": "^9.0.11",
+    "@types/fs-extra": "^9.0.12",
     "@types/node": "^16.0.0",
     "typescript": "^4.3.5"
   }
