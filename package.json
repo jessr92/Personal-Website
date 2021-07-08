@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/gordon1992/Personal-Website#readme",
   "dependencies": {
-    "@types/pug": "^2.0.4",
+    "@types/pug": "^2.0.5",
     "fs-extra": "^10.0.0",
     "pug": "^3.0.2"
   },
