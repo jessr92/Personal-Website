@@ -16,6 +16,10 @@
       {
         "key": "cooking",
         "title": "Cooking"
+      },
+      {
+        "key": "photography",
+        "title": "Photography"
       }
     ]
   },
@@ -105,6 +109,49 @@
         "filename": "/images/chickpea_swarma.jpg",
         "thumbnail": "/images/chickpea_swarma_thumb.jpg",
         "caption": "Chickpea Swarma"
+      }
+    ]
+  },
+  "interests/photography/index.html": {
+    "template": "interest.pug",
+    "description": "Photography",
+    "interest": {
+      "title": "Photography",
+      "description": "My wife and I have a Canon M50 Mark II. It's mostly hers but I play about with it every so often."
+    },
+    "gallery": {
+      "title": "Here are some of the things I have taken a picture of."
+    },
+    "images": [
+      {
+        "filename": "/images/highland_cow.jpg",
+        "thumbnail": "/images/highland_cow_thumb.jpg",
+        "caption": "Highland cow at a farm near our house"
+      },
+      {
+        "filename": "/images/duck.jpg",
+        "thumbnail": "/images/duck_thumb.jpg",
+        "caption": "Duck in a pond"
+      },
+      {
+        "filename": "/images/camel.jpg",
+        "thumbnail": "/images/camel_thumb.jpg",
+        "caption": "A camel very close to our car while at Blair Drummond Safari Park"
+      },
+      {
+        "filename": "/images/goat.jpg",
+        "thumbnail": "/images/goat_thumb.jpg",
+        "caption": "A goat in Blair Drummond Safari Park's pets farm"
+      },
+      {
+        "filename": "/images/giraffe.jpg",
+        "thumbnail": "/images/giraffe_thumb.jpg",
+        "caption": "A giraffe at Blair Drummond Safari Park"
+      },
+      {
+        "filename": "/images/blackjack.jpg",
+        "thumbnail": "/images/blackjack_thumb.jpg",
+        "caption": "One of our cats, Blackjack, enjoying some summer sun"
       }
     ]
   }
