@@ -23,6 +23,7 @@
         slides[slideIndex].style.display = "block";
         thumbnails[slideIndex].className += " active";
         captionText.innerText = thumbnails[slideIndex].alt;
+        showExif(slideIndex);
     }
 
     function toggleModal() {
@@ -37,19 +38,56 @@
     }
 
     function adjustElementDisplay() {
-        document.querySelectorAll('.no-js-caption').forEach( (caption) => {
+        document.querySelectorAll('.no-js-caption').forEach((caption) => {
             caption.style.display = "none";
         });
         document.querySelector('#prevButton').style.display = "block";
         document.querySelector('#nextButton').style.display = "block";
         document.querySelector('#fullScreenButton').style.display = "block";
         document.querySelector('#caption-container').style.display = "block";
-        document.querySelectorAll('.counter').forEach( (caption) => {
+        document.querySelector('#exif-container').style.display = "block";
+        document.querySelectorAll('.counter').forEach((caption) => {
             caption.style.display = "block";
         });
-        document.querySelectorAll('.thumbnail-container').forEach( (caption) => {
+        document.querySelectorAll('.thumbnail-container').forEach((caption) => {
             caption.style.display = "block";
         });
+    }
+
+    function showExif(slideIndex) {
+        const displayedImage = document.getElementsByClassName("thumbnail")[slideIndex];
+        if (displayedImage.complete) {
+            EXIF.getData(displayedImage, extractExifData);
+        } else {
+            displayedImage.onload = function () {
+                EXIF.getData(displayedImage, extractExifData)
+            };
+        }
+    }
+
+    function getDeviceName(image) {
+        const make = EXIF.getTag(image, "Make");
+        const model = EXIF.getTag(image, "Model")
+            .replace("IN2023", "8 Pro")
+            .replace("M50m2", "M50 Mark II");
+        return model.startsWith(make) ? model : `${make} ${model}`;
+    }
+
+    function extractExifData() {
+        const exifText = document.getElementById("exif");
+        const device = getDeviceName(this);
+        const focalLength = EXIF.getTag(this, "FocalLength");
+        const fNumber = EXIF.getTag(this, "FNumber");
+        const iso = EXIF.getTag(this, "ISOSpeedRatings");
+        const exposureDecimal = parseFloat(EXIF.getTag(this, "ExposureTime"));
+        const exposureTime = Math.round(1 / exposureDecimal);
+        exifText.innerText = [
+            `${device}`,
+            `${focalLength}mm focal length`,
+            `f/${fNumber}`,
+            `ISO ${iso}`,
+            `1/${exposureTime}s exposure`
+        ].join(" - ");
     }
 
     exports.setupSlides = function () {

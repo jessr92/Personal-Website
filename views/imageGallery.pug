@@ -10,9 +10,12 @@ div(id="imageGallery")
     a(id="nextButton") &#10095;
     div(id="caption-container")
         p(id="caption")
+    div(id="exif-container")
+        p(id="exif")
     div(class="thumbnails")
         each image, index in images
             div(class="thumbnail-container")
                 img(class="thumbnail" src=image.thumbnail alt=image.caption)
 
+script(src="https://cdn.jsdelivr.net/npm/exif-js")
 script(src="/js/imageGallery.js")
