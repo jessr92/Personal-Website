@@ -69,7 +69,7 @@
     top: 0;
 }
 
-#caption-container {
+#caption-container, #exif-container {
     display: none;
     text-align: center;
     background-color: #222;
