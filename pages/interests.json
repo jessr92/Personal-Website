@@ -152,6 +152,16 @@
         "filename": "/images/blackjack.jpg",
         "thumbnail": "/images/blackjack_thumb.jpg",
         "caption": "One of our cats, Blackjack, enjoying some summer sun"
+      },
+      {
+        "filename": "/images/ladybug_op8.jpg",
+        "thumbnail": "/images/ladybug_op8_thumb.jpg",
+        "caption": "A ladybug was on our car windscreen, a good excuse to try out my phone's macro camera"
+      },
+      {
+        "filename": "/images/ladybug.jpg",
+        "thumbnail": "/images/ladybug_thumb.jpg",
+        "caption": "A ladybug was on our car windscreen, since we had our Canon M50 with us, we tried taking a picture even though we don't have a macro lens"
       }
     ]
   }
