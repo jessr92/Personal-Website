@@ -1,13 +1,13 @@
 p #{gallery.title}
-div(id="imageGallery")
-    span(id="fullScreenButton") ⤡
+div(id="image-gallery")
+    span(id="fullscreen-button") ⤡
     each image, index in images
         div(class="slide-container")
             div(class="counter") #{index + 1} / #{images.length}
             img(class="slide" src=image.filename alt=image.caption)
             p(class="no-js-caption") #{image.caption}
-    a(id="prevButton") &#10094;
-    a(id="nextButton") &#10095;
+    a(id="prev-button") &#10094;
+    a(id="next-button") &#10095;
     div(id="caption-container")
         p(id="caption")
     div(id="exif-container")

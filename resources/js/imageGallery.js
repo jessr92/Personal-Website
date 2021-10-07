@@ -27,13 +27,13 @@
     }
 
     function toggleModal() {
-        const modalCurrentlyOpen = document.getElementById('imageGallery') === null;
+        const modalCurrentlyOpen = document.getElementById('image-gallery') === null;
         if (modalCurrentlyOpen) {
-            document.getElementById('modal').id = "imageGallery";
-            document.getElementById('fullScreenButton').textContent = "⤡";
+            document.getElementById('modal').id = "image-gallery";
+            document.getElementById('fullscreen-button').textContent = "⤡";
         } else {
-            document.getElementById('imageGallery').id = "modal";
-            document.getElementById('fullScreenButton').textContent = "×";
+            document.getElementById('image-gallery').id = "modal";
+            document.getElementById('fullscreen-button').textContent = "×";
         }
     }
 
@@ -41,11 +41,11 @@
         document.querySelectorAll('.no-js-caption').forEach((caption) => {
             caption.style.display = "none";
         });
-        document.querySelector('#prevButton').style.display = "block";
-        document.querySelector('#nextButton').style.display = "block";
-        document.querySelector('#fullScreenButton').style.display = "block";
-        document.querySelector('#caption-container').style.display = "block";
-        document.querySelector('#exif-container').style.display = "block";
+        document.getElementById('prev-button').style.display = "block";
+        document.getElementById('next-button').style.display = "block";
+        document.getElementById('fullscreen-button').style.display = "block";
+        document.getElementById('caption-container').style.display = "block";
+        document.getElementById('exif-container').style.display = "block";
         document.querySelectorAll('.counter').forEach((caption) => {
             caption.style.display = "block";
         });
@@ -93,9 +93,9 @@
     exports.setupSlides = function () {
         adjustElementDisplay();
         showSlide(0);
-        document.querySelector('#prevButton').addEventListener('click', previousSlide);
-        document.querySelector('#nextButton').addEventListener('click', nextSlide);
-        document.querySelector('#fullScreenButton').addEventListener('click', toggleModal);
+        document.getElementById('prev-button').addEventListener('click', previousSlide);
+        document.getElementById('next-button').addEventListener('click', nextSlide);
+        document.getElementById('fullscreen-button').addEventListener('click', toggleModal);
         document.querySelectorAll('.thumbnail').forEach((thumbnail, index) => {
             thumbnail.addEventListener('click', () => showSlide(index));
         });

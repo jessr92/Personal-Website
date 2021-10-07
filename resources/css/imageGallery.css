@@ -1,4 +1,4 @@
-#imageGallery {
+#image-gallery {
     position: relative;
     box-sizing: border-box;
 }
@@ -14,7 +14,7 @@
     background-color: black;
 }
 
-#fullScreenButton {
+#fullscreen-button {
     display: none;
     color: white;
     position: absolute;
@@ -24,17 +24,17 @@
     font-weight: bold;
 }
 
-#fullScreenButton:hover,
-#fullScreenButton:focus {
+#fullscreen-button:hover,
+#fullscreen-button:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
 }
 
-#prevButton,
-#nextButton,
-#prevButton:hover,
-#nextButton:hover {
+#prev-button,
+#next-button,
+#prev-button:hover,
+#next-button:hover {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -50,13 +50,13 @@
     background-color: #3a76b7;
 }
 
-#nextButton {
+#next-button {
     display: none;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-#prevButton {
+#prev-button {
     display: none;
 }
 
@@ -101,7 +101,7 @@
     opacity: 1;
 }
 
-#imageGallery .slide {
+#image-gallery .slide {
     display: block;
     margin: 0 auto;
     max-width: 100%;
