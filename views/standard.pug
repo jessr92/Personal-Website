@@ -2,8 +2,11 @@ extends base.pug
 
 block content
     h3 #{title}
-    each paragraph in paragraphs
-        p !{paragraph}
+    each section in sections
+        if section.type === "text"
+            p !{section.value}
+        else if section.type === "image"
+            img(class="blog-image" src=section.value.filename alt=section.value.caption)
     if includeContactInformation
         br
         include contact.pug

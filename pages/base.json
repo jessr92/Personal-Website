@@ -4,22 +4,46 @@
     "description": "Homepage",
     "includeContactInformation": true,
     "title": "Hello!",
-    "paragraphs": [
-      "My name is Gordon Reid.",
-      "I am a graduate from the University of Glasgow living in Falkirk.",
-      "I will be posting information about my public programming projects on this website. I have experience in many languages including: C, Fortran, Java, and Python.",
-      "As part of my University course I have created applications using OpenCL, enabling the execution of the algorithm on various classes of device including a GPU and the Intel Xeon Phi, improving performance on a heterogeneous shared-memory system.",
-      "I have also used MPI and a novel model coupling framework to parallelise a scientific model written in Fortran. The ability to make use of distributed-memory systems has allowed larger area or finer grained areas to be simulated, improving the accuracy of results.",
-      "More details on all projects are available by visiting the <a href=\"/projects\">Coding</a> page.",
-      "My <a href=\"/pdf/gordon-reid-cv.pdf\">CV</a> and <a href=\"/pdf/gordon-reid-transcript.pdf\">transcript</a> are available for download."
+    "sections": [
+      {
+        "type": "text",
+        "value": "My name is Gordon Reid."
+      },
+      {
+        "type": "text",
+        "value": "I am a graduate from the University of Glasgow living in Falkirk."
+      },
+      {
+        "type": "text",
+        "value": "I will be posting information about my public programming projects on this website. I have experience in many languages including: C, Fortran, Java, and Python."
+      },
+      {
+        "type": "text",
+        "value": "As part of my University course I have created applications using OpenCL, enabling the execution of the algorithm on various classes of device including a GPU and the Intel Xeon Phi, improving performance on a heterogeneous shared-memory system."
+      },
+      {
+        "type": "text",
+        "value": "I have also used MPI and a novel model coupling framework to parallelise a scientific model written in Fortran. The ability to make use of distributed-memory systems has allowed larger area or finer grained areas to be simulated, improving the accuracy of results."
+      },
+      {
+        "type": "text",
+        "value": "More details on all projects are available by visiting the <a href=\"/projects\">Coding</a> page."
+      },
+      {
+        "type": "text",
+        "value": "My <a href=\"/pdf/gordon-reid-cv.pdf\">CV</a> and <a href=\"/pdf/gordon-reid-transcript.pdf\">transcript</a> are available for download."
+      }
     ]
   },
   "404.html": {
     "template": "standard.pug",
     "description": "404 - Page Not Found",
     "title": "404 - Page Not Found",
-    "paragraphs": [
-      "Sorry, page not found. Please navigate using the links above."
+    "sections": [
+      {
+        "type": "text",
+        "value": "Sorry, page not found. Please navigate using the links above."
+      }
     ]
   }
 }
