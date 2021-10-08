@@ -1,8 +1,0 @@
-extends base.pug
-
-block content
-    h3 #{title}
-    ul
-        each entry in list
-            li
-                a(href="/blog/" + entry.category + "/" + entry.entry) #{entry.title}
