@@ -1,14 +1,20 @@
 extends base.pug
 
+append extra-css
+    if sections.map(section => section.type).includes("gallery")
+        link(rel="stylesheet", href="/css/imageGallery.css")
+
 block content
     h3 #{title}
     each section in sections
         if section.type === "text"
             p !{section.value}
         else if section.type === "image"
-            img(class="blog-image" src=section.value.filename alt=section.value.caption)
+            img(class="blog-image" src=section.filename alt=section.caption)
         else if section.type === "url"
             a(href=section.url) #{section.text}
+        else if section.type === "gallery"
+            include imageGallery.pug
     if includeContactInformation
         br
         include contact.pug

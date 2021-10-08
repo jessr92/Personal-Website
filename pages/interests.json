@@ -24,144 +24,172 @@
     ]
   },
   "interests/3DPrinting/index.html": {
-    "template": "interest.pug",
+    "template": "standard.pug",
     "description": "3D Printing",
-    "interest": {
-      "title": "3D Printing",
-      "description": "I have a 3D printer. Content TBD"
-    },
-    "gallery": {
-      "title": "Here are some of the creations I have printed."
-    },
-    "images": [
+    "title": "3D Printing",
+    "sections": [
       {
-        "filename": "https://via.placeholder.com/350x165",
-        "thumbnail": "https://via.placeholder.com/350x165",
-        "caption": "caption1"
+        "type": "text",
+        "value": "I have a 3D printer. Content TBD"
       },
       {
-        "filename": "https://via.placeholder.com/165x350",
-        "thumbnail": "https://via.placeholder.com/165x350",
-        "caption": "caption2"
+        "type": "text",
+        "value": "Here are some of the creations I have printed."
       },
       {
-        "filename": "https://via.placeholder.com/700x500",
-        "thumbnail": "https://via.placeholder.com/700x500",
-        "caption": "caption3"
-      },
-      {
-        "filename": "https://via.placeholder.com/800x500",
-        "thumbnail": "https://via.placeholder.com/800x500",
-        "caption": "caption4"
-      },
-      {
-        "filename": "https://via.placeholder.com/900x500",
-        "thumbnail": "https://via.placeholder.com/900x500",
-        "caption": "caption5"
-      },
-      {
-        "filename": "https://via.placeholder.com/1000x500",
-        "thumbnail": "https://via.placeholder.com/1000x500",
-        "caption": "caption6"
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "https://via.placeholder.com/350x165",
+            "thumbnail": "https://via.placeholder.com/350x165",
+            "caption": "caption1"
+          },
+          {
+            "filename": "https://via.placeholder.com/165x350",
+            "thumbnail": "https://via.placeholder.com/165x350",
+            "caption": "caption2"
+          },
+          {
+            "filename": "https://via.placeholder.com/700x500",
+            "thumbnail": "https://via.placeholder.com/700x500",
+            "caption": "caption3"
+          },
+          {
+            "filename": "https://via.placeholder.com/800x500",
+            "thumbnail": "https://via.placeholder.com/800x500",
+            "caption": "caption4"
+          },
+          {
+            "filename": "https://via.placeholder.com/900x500",
+            "thumbnail": "https://via.placeholder.com/900x500",
+            "caption": "caption5"
+          },
+          {
+            "filename": "https://via.placeholder.com/1000x500",
+            "thumbnail": "https://via.placeholder.com/1000x500",
+            "caption": "caption6"
+          }
+        ]
       }
     ]
   },
   "interests/baking/index.html": {
-    "template": "interest.pug",
+    "template": "standard.pug",
     "description": "Baking",
-    "interest": {
-      "title": "Baking",
-      "description": "I like to bake. Content TBD"
-    },
-    "gallery": {
-      "title": "Here are some of the things I have baked."
-    },
-    "images": [
+    "title": "Baking",
+    "sections": [
       {
-        "filename": "/images/cheesecake.jpg",
-        "thumbnail": "/images/cheesecake_thumb.jpg",
-        "caption": "Cheesecake"
+        "type": "text",
+        "value": "I like to bake. Content TBD"
       },
       {
-        "filename": "/images/cookies.jpg",
-        "thumbnail": "/images/cookies_thumb.jpg",
-        "caption": "Chocolate Chip Cookies"
+        "type": "text",
+        "value": "Here are some of the things I have baked."
       },
       {
-        "filename": "/images/chocolate_raspberry_muffins.jpg",
-        "thumbnail": "/images/chocolate_raspberry_muffins.jpg",
-        "caption": "Chocolate and Raspberry Muffins"
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/cheesecake.jpg",
+            "thumbnail": "/images/cheesecake_thumb.jpg",
+            "caption": "Cheesecake"
+          },
+          {
+            "filename": "/images/cookies.jpg",
+            "thumbnail": "/images/cookies_thumb.jpg",
+            "caption": "Chocolate Chip Cookies"
+          },
+          {
+            "filename": "/images/chocolate_raspberry_muffins.jpg",
+            "thumbnail": "/images/chocolate_raspberry_muffins.jpg",
+            "caption": "Chocolate and Raspberry Muffins"
+          }
+        ]
       }
     ]
   },
   "interests/cooking/index.html": {
-    "template": "interest.pug",
+    "template": "standard.pug",
     "description": "Cooking",
-    "interest": {
-      "title": "Cooking",
-      "description": "I like to cook. Content TBD"
-    },
-    "gallery": {
-      "title": "Here are some of the things I have cooked."
-    },
-    "images": [
+    "title": "Cooking",
+    "sections": [
       {
-        "filename": "/images/chickpea_swarma.jpg",
-        "thumbnail": "/images/chickpea_swarma_thumb.jpg",
-        "caption": "Chickpea Swarma"
+        "type": "text",
+        "value": "I like to cook. Content TBD"
+      },
+      {
+        "type": "text",
+        "value": "Here are some of the things I have cooked."
+      },
+      {
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/chickpea_swarma.jpg",
+            "thumbnail": "/images/chickpea_swarma_thumb.jpg",
+            "caption": "Chickpea Swarma"
+          }
+        ]
       }
     ]
   },
   "interests/photography/index.html": {
-    "template": "interest.pug",
+    "template": "standard.pug",
     "description": "Photography",
-    "interest": {
-      "title": "Photography",
-      "description": "My wife and I have a Canon M50 Mark II. It's mostly hers but I play about with it every so often."
-    },
-    "gallery": {
-      "title": "Here are some of the things I have taken a picture of."
-    },
-    "images": [
+    "title": "Photography",
+    "sections": [
       {
-        "filename": "/images/highland_cow.jpg",
-        "thumbnail": "/images/highland_cow_thumb.jpg",
-        "caption": "Highland cow at a farm near our house"
+        "type": "text",
+        "value": "My wife and I have a Canon M50 Mark II. It's mostly hers but I play about with it every so often."
       },
       {
-        "filename": "/images/duck.jpg",
-        "thumbnail": "/images/duck_thumb.jpg",
-        "caption": "Duck in a pond"
+        "type": "text",
+        "value": "Here are some of the things I have taken a picture of."
       },
       {
-        "filename": "/images/camel.jpg",
-        "thumbnail": "/images/camel_thumb.jpg",
-        "caption": "A camel very close to our car while at Blair Drummond Safari Park"
-      },
-      {
-        "filename": "/images/goat.jpg",
-        "thumbnail": "/images/goat_thumb.jpg",
-        "caption": "A goat in Blair Drummond Safari Park's pets farm"
-      },
-      {
-        "filename": "/images/giraffe.jpg",
-        "thumbnail": "/images/giraffe_thumb.jpg",
-        "caption": "A giraffe at Blair Drummond Safari Park"
-      },
-      {
-        "filename": "/images/blackjack.jpg",
-        "thumbnail": "/images/blackjack_thumb.jpg",
-        "caption": "One of our cats, Blackjack, enjoying some summer sun"
-      },
-      {
-        "filename": "/images/ladybug_op8.jpg",
-        "thumbnail": "/images/ladybug_op8_thumb.jpg",
-        "caption": "A ladybug was on our car windscreen, a good excuse to try out my phone's macro camera"
-      },
-      {
-        "filename": "/images/ladybug.jpg",
-        "thumbnail": "/images/ladybug_thumb.jpg",
-        "caption": "A ladybug was on our car windscreen, since we had our Canon M50 with us, we tried taking a picture even though we don't have a macro lens"
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/highland_cow.jpg",
+            "thumbnail": "/images/highland_cow_thumb.jpg",
+            "caption": "Highland cow at a farm near our house"
+          },
+          {
+            "filename": "/images/duck.jpg",
+            "thumbnail": "/images/duck_thumb.jpg",
+            "caption": "Duck in a pond"
+          },
+          {
+            "filename": "/images/camel.jpg",
+            "thumbnail": "/images/camel_thumb.jpg",
+            "caption": "A camel very close to our car while at Blair Drummond Safari Park"
+          },
+          {
+            "filename": "/images/goat.jpg",
+            "thumbnail": "/images/goat_thumb.jpg",
+            "caption": "A goat in Blair Drummond Safari Park's pets farm"
+          },
+          {
+            "filename": "/images/giraffe.jpg",
+            "thumbnail": "/images/giraffe_thumb.jpg",
+            "caption": "A giraffe at Blair Drummond Safari Park"
+          },
+          {
+            "filename": "/images/blackjack.jpg",
+            "thumbnail": "/images/blackjack_thumb.jpg",
+            "caption": "One of our cats, Blackjack, enjoying some summer sun"
+          },
+          {
+            "filename": "/images/ladybug_op8.jpg",
+            "thumbnail": "/images/ladybug_op8_thumb.jpg",
+            "caption": "A ladybug was on our car windscreen, a good excuse to try out my phone's macro camera"
+          },
+          {
+            "filename": "/images/ladybug.jpg",
+            "thumbnail": "/images/ladybug_thumb.jpg",
+            "caption": "A ladybug was on our car windscreen, since we had our Canon M50 with us, we tried taking a picture even though we don't have a macro lens"
+          }
+        ]
       }
     ]
   }
