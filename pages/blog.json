@@ -12,7 +12,7 @@
     ]
   },
   "blog/PhotographyChallenge/Week1/index.html": {
-    "template": "blog.pug",
+    "template": "standard.pug",
     "description": "Week 1 - Self-Portrait",
     "title": "Week 1 - Self-Portrait",
     "sections": [
