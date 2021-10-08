@@ -1,12 +1,12 @@
 {
   "blog/index.html": {
-    "template": "blogs.pug",
+    "template": "list.pug",
     "description": "List of blog posts",
     "title": "Blog Posts",
+    "directory": "blog",
     "list": [
       {
-        "category": "PhotographyChallenge",
-        "entry": "Week1",
+        "key": "PhotographyChallenge/Week1",
         "title": "Photography Challenge - Week 1 - Self-Portrait"
       }
     ]
