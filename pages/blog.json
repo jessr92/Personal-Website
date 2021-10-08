@@ -26,10 +26,8 @@
       },
       {
         "type": "image",
-        "value": {
-          "filename": "/images/blog/photography_challenge_week_1_before.jpg",
-          "caption": "The unedited image of myself and Constantine"
-        }
+        "filename": "/images/blog/photography_challenge_week_1_before.jpg",
+        "caption": "The unedited image of myself and Constantine"
       },
       {
         "type": "text",
@@ -37,10 +35,8 @@
       },
       {
         "type": "image",
-        "value": {
-          "filename": "/images/blog/photography_challenge_week_1_after.jpg",
-          "caption": "The edited image of myself and Constantine. Mostly black and white, only Constantine is in colour"
-        }
+        "filename": "/images/blog/photography_challenge_week_1_after.jpg",
+        "caption": "The edited image of myself and Constantine. Mostly black and white, only Constantine is in colour"
       },
       {
         "type": "text",
