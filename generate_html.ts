@@ -1,6 +1,7 @@
 import fse = require('fs-extra');
 import pug = require('pug');
 import path = require('path');
+import pretty = require('pretty');
 import {HtmlOutputPathToCompiledTemplateWithMetadata, HtmlOutputPathToTemplateMetadata} from "./custom_types";
 import {
     OUTPUT_FOLDER,
@@ -37,7 +38,7 @@ function generateHtmlPages(): void {
         const compiledFunction = functionAndMetadata[0];
         const metadata = functionAndMetadata[1];
         console.log(metadata);
-        const generatedHtml = compiledFunction(metadata);
+        const generatedHtml = pretty(compiledFunction(metadata), {ocd: true});
         ensureDirectoryExistence(outputFile);
         fse.writeFileSync(outputFile, generatedHtml);
     });

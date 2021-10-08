@@ -15,14 +15,14 @@
     "url": "https://github.com/gordon1992/Personal-Website/issues"
   },
   "homepage": "https://github.com/gordon1992/Personal-Website#readme",
-  "dependencies": {
-    "@types/pug": "^2.0.5",
-    "fs-extra": "^10.0.0",
-    "pug": "^3.0.2"
-  },
   "devDependencies": {
+    "fs-extra": "^10.0.0",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "^16.10.3",
+    "pretty": "^2.0.0",
+    "@types/pretty": "^2.0.0",
+    "pug": "^3.0.2",
+    "@types/pug": "^2.0.5",
     "typescript": "^4.4.3"
   }
 }
