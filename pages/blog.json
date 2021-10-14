@@ -8,6 +8,10 @@
       {
         "key": "PhotographyChallenge/Week1",
         "title": "Photography Challenge - Week 1 - Self-Portrait"
+      },
+      {
+        "key": "PhotographyChallenge/Week2",
+        "title": "Photography Challenge - Week 2 - Something that inspires you"
       }
     ]
   },
@@ -41,6 +45,26 @@
       {
         "type": "text",
         "value": "Here is the final result. I quite like the effect, it really makes Constantine pop out."
+      }
+    ]
+  },
+  "blog/PhotographyChallenge/Week2/index.html": {
+    "template": "standard.pug",
+    "description": "Week 2 - Something that inspires you",
+    "title": "Week 2 - Something that inspires you",
+    "sections": [
+      {
+        "type": "text",
+        "value": "Week 2 of the photography challenge is \"Something that inspires you\". I really struggled to come up with a subject to take a picture of so instead I'm just going to take one of my favourite pictures that I have taken so far."
+      },
+      {
+        "type": "text",
+        "value": "When some close friends were up to visit, we went to see the highland cows that live a couple of minutes from our house. For the first time in the four years that I've lived there, one of the cows came up to see us and was happy to receive some pets!"
+      },
+      {
+        "type": "image",
+        "filename": "/images/blog/photography_challenge_week_2.jpg",
+        "caption": "The unedited image of myself and Constantine"
       }
     ]
   }
