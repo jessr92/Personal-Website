@@ -6,12 +6,12 @@
     "directory": "blog",
     "list": [
       {
-        "key": "PhotographyChallenge/Week1",
-        "title": "Photography Challenge - Week 1 - Self-Portrait"
-      },
-      {
         "key": "PhotographyChallenge/Week2",
         "title": "Photography Challenge - Week 2 - Something that inspires you"
+      },
+      {
+        "key": "PhotographyChallenge/Week1",
+        "title": "Photography Challenge - Week 1 - Self-Portrait"
       }
     ]
   },
