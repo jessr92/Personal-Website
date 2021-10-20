@@ -33,22 +33,27 @@
         "value": "The first week is self-portraits. I don't like taking pictures of myself so this wasn't the most fun one to start off with. We recently however received our Octopus Energy octopus plushie so I decided to take my picture with the pink and cuddly Constantine."
       },
       {
-        "type": "image",
-        "filename": "/images/blog/photography_challenge_week_1_before.jpg",
-        "caption": "The unedited image of myself and Constantine"
+        "type": "text",
+        "value": "The first image is without any editing. Nothing special when taking the picture but I did want to make use of my Adobe Photoshop Elements trial to test out the colour pop capabilities."
       },
       {
         "type": "text",
-        "value": "Above is the image without any editing. Nothing special when taking the picture but I did want to make use of my Adobe Photoshop Elements trial to test out the colour pop capabilities."
+        "value": "The second image is the final result. I quite like the effect, it really makes Constantine pop out."
       },
       {
-        "type": "image",
-        "filename": "/images/blog/photography_challenge_week_1_after.jpg",
-        "caption": "The edited image of myself and Constantine. Mostly black and white, only Constantine is in colour"
-      },
-      {
-        "type": "text",
-        "value": "Here is the final result. I quite like the effect, it really makes Constantine pop out."
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_1_before.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_1_before_thumb.jpg",
+            "caption": "The unedited image of myself and Constantine"
+          },
+          {
+            "filename": "/images/blog/photography_challenge_week_1_after.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_1_after_thumb.jpg",
+            "caption": "The edited image of myself and Constantine. Mostly black and white, only Constantine is in colour"
+          }
+        ]
       }
     ]
   },
@@ -66,9 +71,14 @@
         "value": "When some close friends were up to visit, we went to see the highland cows that live a couple of minutes from our house. For the first time in the four years that I've lived there, one of the cows came up to see us and was happy to receive some pets!"
       },
       {
-        "type": "image",
-        "filename": "/images/blog/photography_challenge_week_2.jpg",
-        "caption": "The unedited image of myself and Constantine"
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_2.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_2_thumb.jpg",
+            "caption": "The unedited image of the highland cow"
+          }
+        ]
       }
     ]
   },
@@ -90,9 +100,14 @@
         "value": "The photograph is shown below. Apart from erasing our number plate, I added lots of background blur to make the car stand out."
       },
       {
-        "type": "image",
-        "filename": "/images/blog/photography_challenge_week_3.jpg",
-        "caption": "A picture of our Honda Jazz, Gatsby, with lots of background blur"
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_3.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_3_thumb.jpg",
+            "caption": "A picture of our Honda Jazz, Gatsby, with lots of background blur"
+          }
+        ]
       }
     ]
   }
