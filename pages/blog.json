@@ -6,6 +6,10 @@
     "directory": "blog",
     "list": [
       {
+        "key": "PhotographyChallenge/Week3",
+        "title": "Photography Challenge - Week 3 - Your favourite colour"
+      },
+      {
         "key": "PhotographyChallenge/Week2",
         "title": "Photography Challenge - Week 2 - Something that inspires you"
       },
@@ -65,6 +69,30 @@
         "type": "image",
         "filename": "/images/blog/photography_challenge_week_2.jpg",
         "caption": "The unedited image of myself and Constantine"
+      }
+    ]
+  },
+  "blog/PhotographyChallenge/Week3/index.html": {
+    "template": "standard.pug",
+    "description": "Week 3 - Your favourite colour",
+    "title": "Week 3 - Your favourite colour",
+    "sections": [
+      {
+        "type": "text",
+        "value": "Week 3 of the photography challenge is \"Your favourite colour\". My favourite colour is blue. I was spoilt for choice when choosing a subject since we have lots of blue items."
+      },
+      {
+        "type": "text",
+        "value": "The subject I chose was our car - a 2nd generation Honda Jazz that Shantel named 'Gatsby'. We've had the car for just over a year and he's helped Shantel master the UK roads."
+      },
+      {
+        "type": "text",
+        "value": "The photograph is shown below. Apart from erasing our number plate, I added lots of background blur to make the car stand out."
+      },
+      {
+        "type": "image",
+        "filename": "/images/blog/photography_challenge_week_3.jpg",
+        "caption": "A picture of our Honda Jazz, Gatsby, with lots of background blur"
       }
     ]
   }
