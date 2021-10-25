@@ -4,6 +4,11 @@ append extra-css
     if sections.map(section => section.type).includes("gallery")
         link(rel="stylesheet", href="/css/imageGallery.css")
 
+append javascript
+    if sections.map(section => section.type).includes("gallery")
+        script(src="https://cdn.jsdelivr.net/npm/exif-js")
+        script(src="/js/imageGallery.js")
+
 block content
     h3 #{title}
     each section in sections
