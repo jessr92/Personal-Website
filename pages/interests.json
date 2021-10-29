@@ -188,6 +188,16 @@
             "filename": "/images/ladybug.jpg",
             "thumbnail": "/images/ladybug_thumb.jpg",
             "caption": "A ladybug was on our car windscreen, since we had our Canon M50 with us, we tried taking a picture even though we don't have a macro lens"
+          },
+          {
+            "filename": "/images/gardens_of_pineapple_building.jpg",
+            "thumbnail": "/images/gardens_of_pineapple_building_thumb.jpg",
+            "caption": "Taken in the gardens of The Pineapple, a building with a pineapple design at its top, with some berries in the foreground."
+          },
+          {
+            "filename": "/images/storm_toe_beans.jpg",
+            "thumbnail": "/images/storm_toe_beans_thumb.jpg",
+            "caption": "A close up picture of one of our cat's toe beans. Storm doesn't spend too much time with us so I grabbed the opportunity while I could."
           }
         ]
       }
