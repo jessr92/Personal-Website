@@ -116,32 +116,32 @@
     ]
   },
   "blog/PhotographyChallenge/Week4/index.html": {
-  "template": "standard.pug",
-  "description": "Week 4 - Black and White",
-  "title": "Week 4 - Black and White",
-  "sections": [
-    {
-      "type": "text",
-      "value": "Week 4 of the photography challenge is \"Black and White\". The weather has been terrible so I haven't wanted to go out and take pictures outside very often. I had thought about trying to grab a picture of some interesting Halloween decorations but there hasn't been many near where I live."
-    },
-    {
-      "type": "text",
-      "value": "Instead I took a picture of my morning cup of coffee. I had also tried to take a picture of the milk being poured into the cup. I had limited success - it was quite tricky holding the camera while pouring the milk! A tripod would have gone a long way to help."
-    },
-    {
-      "type": "text",
-      "value": "This is also the first time I have posted a picture with our new lens - the Canon EF-M 22mm \"pancake\". I was able to buy one from eBay for around 50% the recommended retail price of a brand new one. It's our first prime lens (our others are the 15-45mm and 55-200mm lenses from Canon). I've heard good things about the 22mm, especially for its better low light performance and street photography relative to the 15-45mm kit lens. Time will tell!"
-    },
-    {
-      "type": "gallery",
-      "images": [
-        {
-          "filename": "/images/blog/photography_challenge_week_4.jpg",
-          "thumbnail": "/images/blog/photography_challenge_week_4_thumb.jpg",
-          "caption": "A cup of coffee and a chocolate biscuit"
-        }
-      ]
-    }
-  ]
-}
+    "template": "standard.pug",
+    "description": "Week 4 - Black and White",
+    "title": "Week 4 - Black and White",
+    "sections": [
+      {
+        "type": "text",
+        "value": "Week 4 of the photography challenge is \"Black and White\". The weather has been terrible so I haven't wanted to go out and take pictures outside very often. I had thought about trying to grab a picture of some interesting Halloween decorations but there hasn't been many near where I live."
+      },
+      {
+        "type": "text",
+        "value": "Instead I took a picture of my morning cup of coffee. I had also tried to take a picture of the milk being poured into the cup. I had limited success - it was quite tricky holding the camera while pouring the milk! A tripod would have gone a long way to help."
+      },
+      {
+        "type": "text",
+        "value": "This is also the first time I have posted a picture with our new lens - the Canon EF-M 22mm \"pancake\". I was able to buy one from eBay for around 50% the recommended retail price of a brand new one. It's our first prime lens (our others are the 15-45mm and 55-200mm lenses from Canon). I've heard good things about the 22mm, especially for its better low light performance and street photography relative to the 15-45mm kit lens. Time will tell!"
+      },
+      {
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_4.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_4_thumb.jpg",
+            "caption": "A cup of coffee and a chocolate biscuit"
+          }
+        ]
+      }
+    ]
+  }
 }
