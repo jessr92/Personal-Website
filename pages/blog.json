@@ -6,6 +6,10 @@
     "directory": "blog",
     "list": [
       {
+        "key": "PhotographyChallenge/Week5",
+        "title": "Photography Challenge - Week 5 - Rule of Thirds"
+      },
+      {
         "key": "PhotographyChallenge/Week4",
         "title": "Photography Challenge - Week 4 - Black and White"
       },
@@ -139,6 +143,31 @@
             "filename": "/images/blog/photography_challenge_week_4.jpg",
             "thumbnail": "/images/blog/photography_challenge_week_4_thumb.jpg",
             "caption": "A cup of coffee and a chocolate biscuit"
+          }
+        ]
+      }
+    ]
+  },
+  "blog/PhotographyChallenge/Week5/index.html": {
+    "template": "standard.pug",
+    "description": "Week 5 - Rule of Thirds",
+    "title": "Week 5 - Rule of Thirds",
+    "sections": [
+      {
+        "type": "text",
+        "value": "Week 5 of the photography challenge is \"Rule of Thirds\".  It's not perhaps the best example of how the \"rule\" (more like guidance really I think) but that's what practice is for."
+      },
+      {
+        "type": "text",
+        "value": "We occasionally get a visit from a neighbour's cat called Morag. She's often too nervous to come into our house (and when she does she will run away if she sees us) but she's more than happy to take bits of food from us out of a window. Since we had the camera to hand both Shantel and I took several picture of her and tried practicing the \"Rule of Thirds\"."
+      },
+      {
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_5.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_5_thumb.jpg",
+            "caption": "A picture of a neighbour's cat called Morag"
           }
         ]
       }
