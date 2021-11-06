@@ -203,6 +203,11 @@
             "filename": "/images/morag_closeup.jpg",
             "thumbnail": "/images/morag_closeup_thumb.jpg",
             "caption": "A close up picture of one of our neighbour's cats called Morag."
+          },
+          {
+            "filename": "/images/fiery_sunset_sky.jpg",
+            "thumbnail": "/images/fiery_sunset_sky_thumb.jpg",
+            "caption": "A fiery-looking sky at sunset"
           }
         ]
       }
