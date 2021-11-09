@@ -6,6 +6,10 @@
     "directory": "blog",
     "list": [
       {
+        "key": "PhotographyChallenge/Week6",
+        "title": "Photography Challenge - Week 6 - Complementary Colours"
+      },
+      {
         "key": "PhotographyChallenge/Week5",
         "title": "Photography Challenge - Week 5 - Rule of Thirds"
       },
@@ -168,6 +172,31 @@
             "filename": "/images/blog/photography_challenge_week_5.jpg",
             "thumbnail": "/images/blog/photography_challenge_week_5_thumb.jpg",
             "caption": "A picture of a neighbour's cat called Morag"
+          }
+        ]
+      }
+    ]
+  },
+  "blog/PhotographyChallenge/Week6/index.html": {
+    "template": "standard.pug",
+    "description": "Week 6 - Complementary Colours",
+    "title": "Week 6 - Complementary Colours",
+    "sections": [
+      {
+        "type": "text",
+        "value": "Week 6 of the photography challenge is \"Complementary Colours\". The idea is that colours in opposite sides of a colour wheel complement one another such as blue and orange."
+      },
+      {
+        "type": "text",
+        "value": "My example for this uses that blue and orange harmony in the form of a lit candle. We recently bought some new candles and one is of light blue colour. When lit and taken in a darkened room, it is possible to see the complementary nature of the blue candle against the orange flame."
+      },
+      {
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_6.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_6_thumb.jpg",
+            "caption": "A blue candle lit in a darkened room"
           }
         ]
       }
