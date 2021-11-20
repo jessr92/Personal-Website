@@ -6,6 +6,10 @@
     "directory": "blog",
     "list": [
       {
+        "key": "PhotographyChallenge/Week7",
+        "title": "Photography Challenge - Week 7 - Nature"
+      },
+      {
         "key": "PhotographyChallenge/Week6",
         "title": "Photography Challenge - Week 6 - Complementary Colours"
       },
@@ -197,6 +201,35 @@
             "filename": "/images/blog/photography_challenge_week_6.jpg",
             "thumbnail": "/images/blog/photography_challenge_week_6_thumb.jpg",
             "caption": "A blue candle lit in a darkened room"
+          }
+        ]
+      }
+    ]
+  },
+  "blog/PhotographyChallenge/Week7/index.html": {
+    "template": "standard.pug",
+    "description": "Week 7 - Nature",
+    "title": "Week 7 - Nature",
+    "sections": [
+      {
+        "type": "text",
+        "value": "Week 7 of the photography challenge is \"Nature\". We recently had a long weekend in the Cairngorms which was a perfect opportunity to take some pictures of nature."
+      },
+      {
+        "type": "text",
+        "value": "In the grounds of where we were staying were a few Pheasants, a pig, and lots of little birds flying around a bird feeder set up in the grounds. I was able to snap a few pictures of the pictures in the bird feeder. It was good practice using both the telephoto lens (up to 200mm) and the fast and slow continuous shooting moods on the Canon M50. Definitely would have helped having a tripod so I will probably look to buy one in the near future."
+      },
+      {
+        "type": "text",
+        "value": "The picture was taken in the latter stages of the afternoon, near sunset. As such ISO had to be fairly high at 6400 to enable a sub 1/100s shutter speed. This was required because I was holding the camera with a 173mm focal length - any slower shutter speed was going to result in a very blurry picture."
+      },
+      {
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_7.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_7_thumb.jpg",
+            "caption": "A picture of two birds eating from a bird feeder set up in the grounds of where we were staying."
           }
         ]
       }
