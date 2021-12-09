@@ -6,6 +6,10 @@
     "directory": "blog",
     "list": [
       {
+        "key": "PhotographyChallenge/Week8",
+        "title": "Photography Challenge - Week 8 - Sunrise"
+      },
+      {
         "key": "PhotographyChallenge/Week7",
         "title": "Photography Challenge - Week 7 - Nature"
       },
@@ -230,6 +234,31 @@
             "filename": "/images/blog/photography_challenge_week_7.jpg",
             "thumbnail": "/images/blog/photography_challenge_week_7_thumb.jpg",
             "caption": "A picture of two birds eating from a bird feeder set up in the grounds of where we were staying."
+          }
+        ]
+      }
+    ]
+  },
+  "blog/PhotographyChallenge/Week8/index.html": {
+    "template": "standard.pug",
+    "description": "Week 8 - Sunrise",
+    "title": "Week 8 - Sunrise",
+    "sections": [
+      {
+        "type": "text",
+        "value": "Week 8 of the photography challenge is \"Sunrise\". Sunrise is after 8am right now since its December but the weather isn't great. I had a failed attempt at a sunrise at a viewing point but the hill was icy and our car wouldn't get up the hill."
+      },
+      {
+        "type": "text",
+        "value": "I instead took a picture at home a while back. The sun gave a very fiery look to the sky which looked quite dramatic."
+      },
+      {
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/blog/photography_challenge_week_8.jpg",
+            "thumbnail": "/images/blog/photography_challenge_week_8_thumb.jpg",
+            "caption": "A picture of the fiery sunrise I took from my house."
           }
         ]
       }
