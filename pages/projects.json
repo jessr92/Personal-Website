@@ -16,6 +16,10 @@
       {
         "key": "PersonalWebsite",
         "title": "This website"
+      },
+      {
+        "key": "AdventOfCode2021",
+        "title": "Advent of Code 2021"
       }
     ]
   },
@@ -64,6 +68,22 @@
       {
         "type": "text",
         "value": "This website is hosted on github.io and I have written a very basic TypeScript wrapper around Pug which reads in JSON files and generates the required HTML pages. It's a \"static website generator\" of sorts but one that only contains sufficient functionality for my use cases and nothing else."
+      }
+    ]
+  },
+  "projects/AdventOfCode2021/index.html": {
+    "template": "standard.pug",
+    "description": "My solutions for the Advent of Code 2021 challenge",
+    "title": "Advent of Code 2021",
+    "sections": [
+      {
+        "type": "url",
+        "text": "Github",
+        "url": "https://github.com/gordon1992/advent-of-code-2021"
+      },
+      {
+        "type": "text",
+        "value": "I decided to try doing the Advent of Code 2021 challenge. My solutions are implemented in Java 17 with no particular aims or restrictions on my solutions. I'm just doing it for the fun of solving the puzzles."
       }
     ]
   }
