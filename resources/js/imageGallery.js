@@ -80,13 +80,13 @@
         const fNumber = EXIF.getTag(this, "FNumber");
         const iso = EXIF.getTag(this, "ISOSpeedRatings");
         const exposureDecimal = parseFloat(EXIF.getTag(this, "ExposureTime"));
-        const exposureTime = Math.round(1 / exposureDecimal);
+        const exposureTime = exposureDecimal < 1 ? `1/${Math.round(1 / exposureDecimal)}` : exposureDecimal;
         exifText.innerText = [
             `${device}`,
             `${focalLength}mm focal length`,
             `f/${fNumber}`,
             `ISO ${iso}`,
-            `1/${exposureTime}s exposure`
+            `${exposureTime}s exposure`
         ].join(" - ");
     }
 
