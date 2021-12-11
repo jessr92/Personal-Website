@@ -7,7 +7,7 @@
     "list": [
       {
         "key": "PhotographyChallenge/Week8",
-        "title": "Photography Challenge - Week 8 - Sunrise"
+        "title": "Photography Challenge - Week 8 - Sunset"
       },
       {
         "key": "PhotographyChallenge/Week7",
@@ -241,12 +241,12 @@
   },
   "blog/PhotographyChallenge/Week8/index.html": {
     "template": "standard.pug",
-    "description": "Week 8 - Sunrise",
-    "title": "Week 8 - Sunrise",
+    "description": "Week 8 - Sunset",
+    "title": "Week 8 - Sunset",
     "sections": [
       {
         "type": "text",
-        "value": "Week 8 of the photography challenge is \"Sunrise\". Sunrise is after 8am right now since its December but the weather isn't great. I had a failed attempt at a sunrise at a viewing point but the hill was icy and our car wouldn't get up the hill."
+        "value": "Week 8 of the photography challenge is \"Sunset\". Sunet is before 5pm right now since its December but the weather isn't great. I had a failed attempt at a sunrise (the original intend of the week) at a viewing point but the hill was icy and our car wouldn't get up the hill."
       },
       {
         "type": "text",
@@ -258,7 +258,7 @@
           {
             "filename": "/images/blog/photography_challenge_week_8.jpg",
             "thumbnail": "/images/blog/photography_challenge_week_8_thumb.jpg",
-            "caption": "A picture of the fiery sunrise I took from my house."
+            "caption": "A picture of the fiery sunset I took from my house."
           }
         ]
       }
