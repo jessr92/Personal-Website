@@ -208,6 +208,11 @@
             "filename": "/images/fiery_sunset_sky.jpg",
             "thumbnail": "/images/fiery_sunset_sky_thumb.jpg",
             "caption": "A fiery-looking sky at sunset"
+          },
+          {
+            "filename": "/images/orchid_close_up.jpg",
+            "thumbnail": "/images/orchid_close_up_thumb.jpg",
+            "caption": "A close up of an orchid. This isn't using a macro lens, instead a 22mm prime. The long exposure time made possible by use of a recently purchased tripod."
           }
         ]
       }
