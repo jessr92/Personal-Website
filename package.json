@@ -18,7 +18,7 @@
   "devDependencies": {
     "fs-extra": "^10.1.0",
     "@types/fs-extra": "^9.0.13",
-    "@types/node": "^18.7.18",
+    "@types/node": "^18.7.21",
     "pretty": "^2.0.0",
     "@types/pretty": "^2.0.1",
     "pug": "^3.0.2",
