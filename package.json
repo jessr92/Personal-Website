@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/gordon1992/Personal-Website#readme",
   "devDependencies": {
-    "fs-extra": "^10.1.0",
+    "fs-extra": "^11.1.0",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.11.18",
     "pretty": "^2.0.0",
