@@ -150,6 +150,11 @@
         "type": "gallery",
         "images": [
           {
+            "filename": "/images/ice_dropped_in_water.jpg",
+            "thumbnail": "/images/ice_dropped_in_water_thumb.jpg",
+            "caption": "Ice dropped into a glass of water"
+          },
+          {
             "filename": "/images/highland_cow.jpg",
             "thumbnail": "/images/highland_cow_thumb.jpg",
             "caption": "Highland cow at a farm near our house"
