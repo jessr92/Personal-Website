@@ -3,13 +3,7 @@ import pug = require('pug');
 import path = require('path');
 import pretty = require('pretty');
 import {HtmlOutputPathToCompiledTemplateWithMetadata, HtmlOutputPathToTemplateMetadata} from "./custom_types";
-import {
-    OUTPUT_FOLDER,
-    PAGES_FOLDER,
-    PUG_OPTIONS,
-    RESOURCES_FOLDER,
-    VIEWS_FOLDER,
-} from "./constants";
+import {OUTPUT_FOLDER, PAGES_FOLDER, PUG_OPTIONS, RESOURCES_FOLDER, VIEWS_FOLDER,} from "./constants";
 
 function compileTemplates(): HtmlOutputPathToCompiledTemplateWithMetadata {
     const compiledViews: HtmlOutputPathToCompiledTemplateWithMetadata = {};

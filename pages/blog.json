@@ -6,6 +6,10 @@
     "directory": "blog",
     "list": [
       {
+        "key": "StudioPhotographyCourse/IceDroppedInWater",
+        "title": "Studio Photography Course - Ice dropped in water"
+      },
+      {
         "key": "PhotographyChallenge/Week8",
         "title": "Photography Challenge - Week 8 - Sunset"
       },
@@ -259,6 +263,27 @@
             "filename": "/images/blog/photography_challenge_week_8.jpg",
             "thumbnail": "/images/blog/photography_challenge_week_8_thumb.jpg",
             "caption": "A picture of the fiery sunset I took from my house."
+          }
+        ]
+      }
+    ]
+  },
+  "blog/StudioPhotographyCourse/IceDroppedInWater/index.html": {
+    "template": "standard.pug",
+    "description": "Studio Photography Course - Ice dropped in water",
+    "title": "Studio Photography Course - Ice dropped in water",
+    "sections": [
+      {
+        "type": "text",
+        "value": "I have recently started a photography course at Forth Valley college. The course is an introduction to studio photography. One of the take home tasks was to take a picture of an ice cube dropped into a glass of water. This was to get used to the exposure triangle where we modify shutter speed, aperture, and ISO. To capture the splash clearly a fast shutter speed is required. This means there is not a lot of light able to enter the camera's sensor. In the picture I took I had the aperture as wide open as the lens (28mm Macro EF-M) allows with ISO set high enough to make the sensor sensitive enough to light without introducing too much noise."
+      },
+      {
+        "type": "gallery",
+        "images": [
+          {
+            "filename": "/images/ice_dropped_in_water.jpg",
+            "thumbnail": "/images/ice_dropped_in_water_thumb.jpg",
+            "caption": "Ice dropped into a glass of water"
           }
         ]
       }
