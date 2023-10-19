@@ -20,7 +20,7 @@
     "@types/fs-extra": "^11.0.2",
     "@types/node": "^20.8.6",
     "pretty": "^2.0.0",
-    "@types/pretty": "^2.0.1",
+    "@types/pretty": "^2.0.2",
     "pug": "^3.0.2",
     "@types/pug": "^2.0.7",
     "typescript": "^5.2.2"
