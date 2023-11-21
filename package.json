@@ -22,7 +22,7 @@
     "pretty": "^2.0.0",
     "@types/pretty": "^2.0.3",
     "pug": "^3.0.2",
-    "@types/pug": "^2.0.9",
+    "@types/pug": "^2.0.10",
     "typescript": "^5.2.2"
   }
 }
