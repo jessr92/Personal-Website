@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gordon1992/Personal-Website.git"
+    "url": "git+https://github.com/jessr92/Personal-Website.git"
   },
-  "author": "Gordon Reid",
+  "author": "Jessica Reid",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gordon1992/Personal-Website/issues"
+    "url": "https://github.com/jessr92/Personal-Website/issues"
   },
-  "homepage": "https://github.com/gordon1992/Personal-Website#readme",
+  "homepage": "https://github.com/jessr92/Personal-Website#readme",
   "devDependencies": {
     "fs-extra": "^11.2.0",
     "@types/fs-extra": "^11.0.4",

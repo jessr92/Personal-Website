@@ -7,7 +7,7 @@
     "sections": [
       {
         "type": "text",
-        "value": "My name is Gordon Reid."
+        "value": "My name is Jessica Reid."
       },
       {
         "type": "text",
@@ -31,7 +31,7 @@
       },
       {
         "type": "text",
-        "value": "My <a href=\"/pdf/gordon-reid-cv.pdf\">CV</a> is available for download."
+        "value": "My <a href=\"/pdf/jessica-reid-cv.pdf\">CV</a> is available for download."
       }
     ]
   },
