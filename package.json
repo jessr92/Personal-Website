@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/jessr92/Personal-Website#readme",
   "devDependencies": {
-    "fs-extra": "^11.2.0",
+    "fs-extra": "^11.3.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.14.12",
     "pretty": "^2.0.0",
