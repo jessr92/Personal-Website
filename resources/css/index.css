@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #3a76b7;
+    background-color: #b73a7b;
     font-weight: 500;
     font-size: 48px;
     padding: 10px;
@@ -15,7 +15,7 @@ header {
 }
 
 nav {
-    background: #00008b;
+    background: #8b0000;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #3a76b7;
+    background-color: #b73a7b;
     text-decoration: underline;
 }
 
