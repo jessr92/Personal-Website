@@ -16,13 +16,13 @@
   },
   "homepage": "https://github.com/jessr92/Personal-Website#readme",
   "devDependencies": {
-    "fs-extra": "^11.2.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.13.10",
-    "pretty": "^2.0.0",
     "@types/pretty": "^2.0.3",
-    "pug": "^3.0.3",
     "@types/pug": "^2.0.10",
+    "fs-extra": "^11.3.0",
+    "pretty": "^2.0.0",
+    "pug": "^3.0.3",
     "typescript": "^5.8.2"
   }
 }
