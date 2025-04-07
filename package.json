@@ -23,6 +23,6 @@
     "fs-extra": "^11.3.0",
     "pretty": "^2.0.0",
     "pug": "^3.0.3",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   }
 }
