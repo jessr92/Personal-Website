@@ -24,5 +24,8 @@
     "pretty": "^2.0.0",
     "pug": "^3.0.3",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
